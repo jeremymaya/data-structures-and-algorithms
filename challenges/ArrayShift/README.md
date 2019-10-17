@@ -25,9 +25,9 @@ Write a function called `insertShiftArray` which takes in an array and the value
 1. Determine the middle index
 2. Create a new int array
 3. Use a for loop to iterate over the new int array and assign a value with the following condition
-  a. If i < middle, value of the new array at index i euqals to the value of the old array at index i
-  b. If i == middle, value of the new array at index i equal to the value to be added
-  c. If i > middle, value of the new array at index i euqals to the value of the old array at index  i - 1
+    1. If i < middle, value of the new array at index i euqals to the value of the old array at index i
+    2. If i == middle, value of the new array at index i equal to the value to be added
+    3. If i > middle, value of the new array at index i euqals to the value of the old array at index  i - 1
 4. Return the new int array
 
 ### Efficiency
