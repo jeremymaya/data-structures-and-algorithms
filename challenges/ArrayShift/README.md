@@ -25,9 +25,9 @@ Write a function called `insertShiftArray` which takes in an array and the value
 1. Determine the middle index
 2. Create a new int array
 3. Use a for loop to iterate over the new int array and assign a value with the following condition
-    a. If i < middle, value of the new array at index i euqals to the value of the old array at index i
-	b. If i == middle, value of the new array at index i equal to the value to be added
-	c. If i > middle, value of the new array at index i euqals to the value of the old array at index  i - 1
+  a. If i < middle, value of the new array at index i euqals to the value of the old array at index i
+  b. If i == middle, value of the new array at index i equal to the value to be added
+  c. If i > middle, value of the new array at index i euqals to the value of the old array at index  i - 1
 4. Return the new int array
 
 ### Efficiency
@@ -64,16 +64,14 @@ public static int[] insertShiftArray(int[] arr, int num)
 ---
 
 ### Link to Code
-
-
+https://github.com/jeremymaya/data-structures-and-algorithms-c-/blob/array-shift/challenges/ArrayShift/ArrayShift/Program.cs
 
 ---
 
 ### Whiteboard Visual
-![Image 1](https://via.placeholder.com/750x500)
-
+![array-shift](https://github.com/jeremymaya/data-structures-and-algorithms-c-/blob/array-shift/assets/array-shift.jpg)
 
 ---
 
 ### Change Log
-1.1: *Code Challenge 02 Completed, Initial submission* - 17 Oct 2019  
+1.0: *Code Challenge 02 Completed, Initial submission* - 17 Oct 2019  
