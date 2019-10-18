@@ -30,6 +30,8 @@ Write a function called `insertShiftArray` which takes in an array and the value
     3. If i > middle, value of the new array at index i euqals to the value of the old array at index  i - 1
 4. Return the new int array
 
+---
+
 ### Efficiency
 N/A
 
