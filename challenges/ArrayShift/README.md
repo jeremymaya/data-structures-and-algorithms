@@ -71,7 +71,7 @@ https://github.com/jeremymaya/data-structures-and-algorithms-c-/blob/array-shift
 ---
 
 ### Whiteboard Visual
-![array-shift](https://github.com/jeremymaya/data-structures-and-algorithms-c-/blob/array-shift/assets/array-shift.jpg)
+![array-shift](https://github.com/jeremymaya/data-structures-and-algorithms-c-/blob/master/assets/array-shift.jpg)
 
 ---
 
