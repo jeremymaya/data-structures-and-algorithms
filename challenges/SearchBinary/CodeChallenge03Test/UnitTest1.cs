@@ -2,7 +2,7 @@ using System;
 using Xunit;
 using SearchBinary;
 
-namespace SearchBinaryTest
+namespace CodeChallenge03Test
 {
     public class UnitTest1
     {

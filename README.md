@@ -3,6 +3,7 @@
 
 ## Table of Contents
 1. [Array Shift](https://github.com/jeremymaya/data-structures-and-algorithms-c-/tree/array-shift/challenges/ArrayShift)
+1. [Array Binary Search](https://github.com/jeremymaya/data-structures-and-algorithms-c-/tree/array-shift/challenges/BinarySearch)
 
 ---
 
