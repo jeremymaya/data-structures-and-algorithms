@@ -76,7 +76,7 @@ https://github.com/jeremymaya/data-structures-and-algorithms-c-/blob/master/chal
 ---
 
 ### Whiteboard Visual
-![array-binary-search](https://github.com/jeremymaya/data-structures-and-algorithms-c-/blob/array-shift/assets/array-shift.jpg)
+![array-binary-search](https://github.com/jeremymaya/data-structures-and-algorithms-c-/blob/master/assets/array-binary-search.jpg)
 
 ---
 
