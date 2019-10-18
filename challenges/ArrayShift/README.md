@@ -66,7 +66,7 @@ public static int[] insertShiftArray(int[] arr, int num)
 ---
 
 ### Link to Code
-https://github.com/jeremymaya/data-structures-and-algorithms-c-/blob/array-shift/challenges/ArrayShift/ArrayShift/Program.cs
+https://github.com/jeremymaya/data-structures-and-algorithms-c-/blob/master/challenges/ArrayShift/ArrayShift/Program.cs
 
 ---
 
