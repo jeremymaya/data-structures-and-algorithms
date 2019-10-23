@@ -36,44 +36,106 @@ Write the following methods:
 
 ### Approach
 #### .append(value)
-1. Determine the middle index
-2. Create a new int array
-3. Use a for loop to iterate over the new int array and assign a value with the following condition
-    1. If i < middle, value of the new array at index i euqals to the value of the old array at index i
-    2. If i == middle, value of the new array at index i equal to the value to be added
-    3. If i > middle, value of the new array at index i euqals to the value of the old array at index  i - 1
-4. Return the new int array
+1. Check if Head exists
+    1. If Head == null, create a new linked list
+    2. Else, continue to step 2
+2. Create 'current' node from Head to save the Head reference
+3. Iterate through a linked list using current while a node next to current does not equal to null
+4. Append a new node by creating a node with parameter value next to the current node
+#### .insertBefore(value, newValue)
+1. Check if Head exists
+    1. If Head == null, create a new linked list
+    2. Else, continue to step 2
+2. Create 'previous' node
+3. Create 'current' node from Head to save the Head reference
+4. For each iteration, set previous equal to current to keep the current reference
+5. Iterate through a linked list using current while value at current does not equal to parameter value
+5. Append a new node by create a new node next to the current node
+#### .insertAfter(value, newValue)
+1. Check if Head exists
+    1. If Head == null, create a new linked list
+    2. Else, continue to step 2
+2. Create 'current' node from Head to save the Head reference
+3. Iterate through a linked list using current while value at current does not equal to parameter value
+4. Insert a new node by creating a node with parameter newValue next to the current node
+
 
 ---
 
 ### Efficiency
-N/A
+Above methods have O(n) efficiency due to the usage of a while loop
 
 ---
 
 ### Solution
+#### .append(value)
 ```C#
-public static int[] insertShiftArray(int[] arr, int num)
+public void Append(int value)
 {
-    int[] newArr = new int[(arr.Length + 1)];
-    double middle= Math.Ceiling(arr.Length / 2.0);
-
-    for (int i = 0; i <= arr.Length; i++)
+    Node newNode = new Node(value);
+    if (Head == null)
     {
-        if (i < middle)
+        Head = newNode;
+    }
+    else
+    {
+        Node current = Head;
+        while (current.Next != null)
         {
-            newArr[i] = arr[i];
+            current = current.Next;
         }
-        else if (i == middle)
+        current.Next = new Node(value);
+    }
+
+}
+```
+#### .insertBefore(value, newValue)
+```C#
+public void InsertBefore(int value, int newValue)
+{
+    Node newNode = new Node(value);
+    if (Head == null)
+    {
+        Head = newNode;
+    }
+    else
+    {
+        Node previous = null;
+        Node current = Head;
+        while (current.Value != value)
         {
-            newArr[i] = num;
+            previous = current;
+            current = current.Next;
         }
-        else if (i > middle)
+        if(previous == null)
         {
-            newArr[i] = arr[i - 1];
+            Head = new Node(newValue);
+        }
+        else
+        {
+            previous.Next = new Node(newValue);
         }
     }
-    return newArr;
+}
+```
+#### .insertAfter(value, newValue)
+```C#
+public void InsertAfter(int value, int newValue)
+{
+    Node newNode = new Node(value);
+    if (Head == null)
+    {
+        Head = newNode;
+    }
+    else
+    {
+        Node current = Head;
+        while (current.Value != value)
+        {
+            current = current.Next;
+        }
+        current.Next = new Node(newValue);
+    }
 }
 ```
 
