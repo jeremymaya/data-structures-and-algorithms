@@ -45,7 +45,14 @@ namespace LinkedList.Classes
                     previous = current;
                     current = current.Next;
                 }
-                previous.Next = new Node(newValue);
+                if(previous == null)
+                {
+                    Head = new Node(newValue);
+                }
+                else
+                {
+                    previous.Next = new Node(newValue);
+                }
             }
         }
 
