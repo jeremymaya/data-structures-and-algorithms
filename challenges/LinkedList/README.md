@@ -1,7 +1,7 @@
 # Code Challenge 06 Linked List Insertions
 
 ## Linked List Insertions
-*Author: Kyungrae Kim*
+*Author: Kyungrae Kim*  
 *Pair Partner: Alistair Blakee*
 
 ---
