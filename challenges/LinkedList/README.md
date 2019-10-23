@@ -2,7 +2,7 @@
 
 ## Linked List Insertions
 *Author: Kyungrae Kim*  
-*Pair Partner: Alistair Blakee*
+*Pair Partner: Alistair Blake*
 
 ---
 
