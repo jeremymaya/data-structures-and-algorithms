@@ -151,8 +151,9 @@ https://github.com/jeremymaya/data-structures-and-algorithms-c-/blob/master/chal
 ---
 
 ### Credit
-Carnegie Mellon University  
-https://www.cs.cmu.edu/~adamchik/15-121/lectures/Linked%20Lists/linked%20lists.html
+[Carnegie Mellon University](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Linked%20Lists/linked%20lists.html)
+
+---
 
 ### Change Log
 1.0: *Code Challenge 06 Completed, Initial submission* - 22 Oct 2019  
