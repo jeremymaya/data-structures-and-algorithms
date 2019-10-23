@@ -86,7 +86,6 @@ public void Append(int value)
         }
         current.Next = new Node(value);
     }
-
 }
 ```
 #### .insertBefore(value, newValue)
@@ -142,14 +141,17 @@ public void InsertAfter(int value, int newValue)
 ---
 
 ### Link to Code
-https://github.com/jeremymaya/data-structures-and-algorithms-c-/blob/master/challenges/ArrayShift/ArrayShift/Program.cs
+https://github.com/jeremymaya/data-structures-and-algorithms-c-/blob/master/challenges/LinkedList/LinkedList/Classes/Node.cs
 
 ---
 
 ### Whiteboard Visual
-![array-shift](https://github.com/jeremymaya/data-structures-and-algorithms-c-/blob/master/assets/array-shift.jpg)
+![linked-list-insertions](https://github.com/jeremymaya/data-structures-and-algorithms-c-/blob/master/assets/linked-list-insertions.jpg)
 
 ---
 
+### Credit
+Carnegie Mellon University: https://www.cs.cmu.edu/~adamchik/15-121/lectures/Linked%20Lists/linked%20lists.html
+
 ### Change Log
-1.0: *Code Challenge 02 Completed, Initial submission* - 17 Oct 2019  
+1.0: *Code Challenge 06 Completed, Initial submission* - 22 Oct 2019  
