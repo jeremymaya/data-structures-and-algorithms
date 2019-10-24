@@ -76,5 +76,29 @@ namespace CodeChallenge06Test
 
             Assert.Equal(5, testList.Head.Next.Next.Next.Value);
         }
+
+        [Fact]
+        public void HappyPathKthFromEnd()
+        {
+            LinkedList.Classes.LinkedList testList = new LinkedList.Classes.LinkedList();
+            testList.Append(1);
+            testList.Append(3);
+            testList.Append(8);
+            testList.Append(2);
+
+            Assert.Equal(3, testList.KthFromEnd(2));
+        }
+
+        [Fact]
+        public void KIsGreaterThanTheLengthOfTheLinkedList()
+        {
+            LinkedList.Classes.LinkedList testList = new LinkedList.Classes.LinkedList();
+            testList.Append(1);
+            testList.Append(3);
+            testList.Append(8);
+            testList.Append(2);
+
+            Assert.Throws<NullReferenceException>(() => testList.KthFromEnd(6));
+        }
     }
 }

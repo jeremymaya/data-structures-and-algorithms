@@ -73,5 +73,35 @@ namespace LinkedList.Classes
                 current.Next = new Node(newValue);
             }
         }
+
+        public int KthFromEnd(int num)
+        {
+            Node current = Head;
+            Node argument = null;
+            int countList = 0;
+            while (current.Next != null)
+            {
+                if(countList == num)
+                {
+                    argument = current;
+                }
+                current = current.Next;
+                countList++;
+            }
+
+            int countNum = 0;
+            while(argument.Next != null)
+            {
+                argument = argument.Next;
+                countNum++;
+            }
+
+            current = Head;
+            for (int i = 0; i < (countList - (countList - countNum)); i++)
+            {
+                current = current.Next;
+            }
+            return current.Value;
+        }
     }
 }
