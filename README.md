@@ -4,7 +4,7 @@
 ## Table of Contents
 1. [Array Shift](https://github.com/jeremymaya/data-structures-and-algorithms-c-/tree/master/challenges/ArrayShift)
 2. [Array Binary Search](https://github.com/jeremymaya/data-structures-and-algorithms-c-/tree/master/challenges/SearchBinary)
-3. [Linked List](https://github.com/jeremymaya/data-structures-and-algorithms-c-/tree/masterend/Data%20Structures/LinkedList)
+3. [Linked List](https://github.com/jeremymaya/data-structures-and-algorithms-c-/tree/master/Data%20Structures/LinkedList)
 
 ---
 
