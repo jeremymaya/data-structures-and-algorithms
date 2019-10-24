@@ -11,7 +11,7 @@ Write the following methods:
 1. `.append(value)` which adds a new node with the given `value` to the end of the list
 2. `.insertBefore(value, newVal)` which add a new node with the given `newValue` immediately before the first `value` node
 3. `.insertAfter(value, newVal)` which add a new node with the given `newValue` immediately after the first `value` node
-4. `.kthFromEnd(k)` which return the node’s value that is `k` from the end of the linked list
+4. `.kthFromEnd(k)` which return the nodeâ€™s value that is `k` from the end of the linked list
 
 ---
 
@@ -213,7 +213,7 @@ https://github.com/jeremymaya/data-structures-and-algorithms-c-/blob/master/chal
 ### Whiteboard Visual
 #### Linked List Insertions
 ![linked-list-insertions](https://github.com/jeremymaya/data-structures-and-algorithms-c-/blob/master/assets/linked-list-insertions.jpg)
-####
+#### Linked List kth From the End
 ![k-th-value-from-the-end](https://github.com/jeremymaya/data-structures-and-algorithms-c-/blob/master/assets/k-th-value-from-the-end.jpg)
 
 ---
