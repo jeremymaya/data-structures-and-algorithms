@@ -26,7 +26,6 @@ namespace LinkedList.Classes
                 }
                 current.Next = new Node(value);
             }
-
         }
 
         public void InsertBefore(int value, int newValue)
@@ -45,7 +44,7 @@ namespace LinkedList.Classes
                     previous = current;
                     current = current.Next;
                 }
-                if(previous == null)
+                if (previous == null)
                 {
                     Head = new Node(newValue);
                 }
@@ -79,19 +78,20 @@ namespace LinkedList.Classes
             Node current = Head;
             Node argument = null;
             int countList = 0;
+
             while (current.Next != null)
             {
-                if(countList == num)
+                if (countList == num)
                 {
-                    argument = current.Next;
+                    argument = current;
                 }
                 current = current.Next;
                 countList++;
             }
 
-            int countNum = 0;
-            try
+            if (countList != 0)
             {
+                int countNum = 0;
                 while (argument.Next != null)
                 {
                     argument = argument.Next;
@@ -99,14 +99,11 @@ namespace LinkedList.Classes
                 }
 
                 current = Head;
-                for (int i = 0; i <= (countList - (countList - countNum)); i++)
+                for (int i = 0; i < num - countNum; i++)
                 {
                     current = current.Next;
                 }
-            }
-            catch (Exception)
-            {
-                throw new Exception("Exception");
+                return current.Value;
             }
             return current.Value;
         }
