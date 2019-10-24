@@ -83,23 +83,30 @@ namespace LinkedList.Classes
             {
                 if(countList == num)
                 {
-                    argument = current;
+                    argument = current.Next;
                 }
                 current = current.Next;
                 countList++;
             }
 
             int countNum = 0;
-            while(argument.Next != null)
+            try
             {
-                argument = argument.Next;
-                countNum++;
-            }
+                while (argument.Next != null)
+                {
+                    argument = argument.Next;
+                    countNum++;
+                }
 
-            current = Head;
-            for (int i = 0; i < (countList - (countList - countNum)); i++)
+                current = Head;
+                for (int i = 0; i <= (countList - (countList - countNum)); i++)
+                {
+                    current = current.Next;
+                }
+            }
+            catch (Exception)
             {
-                current = current.Next;
+                throw new Exception("Exception");
             }
             return current.Value;
         }

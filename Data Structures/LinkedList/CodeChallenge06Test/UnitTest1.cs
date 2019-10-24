@@ -100,5 +100,23 @@ namespace CodeChallenge06Test
 
             Assert.Throws<NullReferenceException>(() => testList.KthFromEnd(6));
         }
+
+        [Fact]
+        public void KAndTheLengthOfTheListAreTheSame()
+        {
+            LinkedList.Classes.LinkedList testList = new LinkedList.Classes.LinkedList();
+            testList.Append(1);
+            testList.Append(3);
+            testList.Append(8);
+            testList.Append(2);
+
+            Assert.Equal(1, testList.KthFromEnd(3));
+        }
+
+        [Fact]
+        public void KIsNotAPositiveInteger()
+        {
+ 
+        }
     }
 }
