@@ -1,7 +1,7 @@
 # Code Challenge 08 Linked List Merge
 
-## Array Search Binary
-*Author: Kyungrae Kim*
+## Linked List Merge
+*Author: Kyungrae Kim*  
 *Pair Partner: Matthew Heyert*  
 
 ---
