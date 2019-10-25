@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LLMerge", "LLMerge\LLMerge.csproj", "{ADCD9673-13DA-4726-88DB-7B2E60C02340}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeChallenge08Test", "CodeChallenge08Test\CodeChallenge08Test.csproj", "{14611896-73A2-4D3D-8D5F-1FBB232DF081}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADCD9673-13DA-4726-88DB-7B2E60C02340}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADCD9673-13DA-4726-88DB-7B2E60C02340}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADCD9673-13DA-4726-88DB-7B2E60C02340}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADCD9673-13DA-4726-88DB-7B2E60C02340}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14611896-73A2-4D3D-8D5F-1FBB232DF081}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14611896-73A2-4D3D-8D5F-1FBB232DF081}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14611896-73A2-4D3D-8D5F-1FBB232DF081}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14611896-73A2-4D3D-8D5F-1FBB232DF081}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
