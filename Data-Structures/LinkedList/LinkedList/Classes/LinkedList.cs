@@ -10,6 +10,45 @@ namespace LinkedList.Classes
             Head = null;
         }
 
+        public Node Insert(int value)
+        {
+            Head = new Node(value);
+            return Head;
+        }
+
+        public bool Include(int value)
+        {
+            bool include = false;
+            if(Head == null)
+            {
+                return include;
+            }
+            Node current = Head;
+            while(current.Next != null)
+            {
+                if(current.Value == value)
+                {
+                    include = true;
+                }
+                current = current.Next;
+            }
+            return include;
+        }
+
+        public void ListToString()
+        {
+            if (Head == null)
+            {
+                Console.WriteLine("");
+            }
+            Node current = Head;
+            while (current.Next != null)
+            {
+                Console.Write($"{current.Value} ");
+                current = current.Next;
+            }
+        }
+
         public void Append(int value)
         {
             Node newNode = new Node(value);
