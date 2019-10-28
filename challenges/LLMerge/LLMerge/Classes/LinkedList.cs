@@ -10,19 +10,35 @@ namespace LLMerge.Classes
             Head = null;
         }
 
-        public Node MergeLists(LinkedList listOne, LinkedList listTwo)
+        public LinkedList MergeLists(LinkedList listOne, LinkedList listTwo)
         {
             Node currentOne = listOne.Head;
             Node currentTwo = listTwo.Head;
+            Node mergedNode = null;
 
-            LinkedList mergedList = new LinkedList();
-            mergedList.Append(currentOne.Value);
-            currentOne = currentOne.Next;
-            Node tracker = mergedList.Head;
-
-            int count = 1;
-            while (currentOne != null && currentTwo != null)
+            bool iterate = true;
+            while (iterate)
             {
+                mergedNode = currentOne;
+                currentOne = currentOne.Next;
+
+                if (currentTwo != null)
+                {
+                    mergedNode.Next = new Node(currentTwo.Value);
+                    currentTwo = currentTwo.Next;
+                }
+                if (currentOne != null)
+                {
+                    mergedNode.Next = new Node(currentOne.Value);
+                    currentOne = currentOne.Next;
+                }
+                if (currentOne == null & currentTwo == null)
+                {
+                    iterate = false;
+                }
+            }
+
+
                 if (count % 2 == 0)
                 {
                     tracker.Next = new Node(currentOne.Value);
@@ -36,8 +52,7 @@ namespace LLMerge.Classes
                 tracker = tracker.Next;
                 count++;
             }
-            tracker = mergedList.Head;
-            return tracker;
+            return mergedList;
         }
 
         public void Append(int value)
