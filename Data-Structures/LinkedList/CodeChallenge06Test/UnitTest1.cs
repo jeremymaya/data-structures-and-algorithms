@@ -6,6 +6,84 @@ namespace CodeChallenge06Test
     public class UnitTest1
     {
         [Fact]
+        public void CanSuccessfullyInstantiateAnEmptyLinkedList()
+        {
+            LinkedList.Classes.LinkedList testList = new LinkedList.Classes.LinkedList();
+
+            Assert.Null(testList.Head);
+        }
+
+        [Fact]
+        public void CanProperlyInsertIntoTheLinkedList()
+        {
+            LinkedList.Classes.LinkedList testList = new LinkedList.Classes.LinkedList();
+            testList.Insert(1);
+
+            Assert.Equal(1, testList.Head.Value);
+        }
+
+        [Fact]
+        public void TheHeadPropertyWillProperlyPointToTheFirstNodeInTheLinkedList()
+        {
+            LinkedList.Classes.LinkedList testList = new LinkedList.Classes.LinkedList();
+            testList.Insert(5);
+            testList.Insert(2);
+            testList.Insert(3);
+            testList.Insert(1);
+
+            Assert.Equal(1, testList.Head.Value);
+        }
+
+        [Fact]
+        public void CanProperlyInsertMultipleNodesIntoTheLinkedList()
+        {
+            LinkedList.Classes.LinkedList testList = new LinkedList.Classes.LinkedList();
+            testList.Insert(5);
+            testList.Insert(2);
+            testList.Insert(3);
+            testList.Insert(1);
+
+            Assert.Equal(3, testList.Head.Next.Value);
+        }
+
+        [Fact]
+        public void WillReturnTrueWhenFindingAValueWithinTheLinkedListThatExists()
+        {
+            LinkedList.Classes.LinkedList testList = new LinkedList.Classes.LinkedList();
+            testList.Insert(5);
+            testList.Insert(2);
+            testList.Insert(3);
+            testList.Insert(1);
+
+            Assert.True(testList.Include(5));
+        }
+
+        [Fact]
+        public void WillReturnFalseWhenSearchingForAValueInTheLinkedListThatDoesNotExist()
+        {
+            LinkedList.Classes.LinkedList testList = new LinkedList.Classes.LinkedList();
+            testList.Insert(5);
+            testList.Insert(2);
+            testList.Insert(3);
+            testList.Insert(1);
+
+            Assert.False(testList.Include(9));
+        }
+
+        [Fact]
+        public void CanProperlyReturnACollectionOfAllTheValuesThatExistInTheLinkedList()
+        {
+            LinkedList.Classes.LinkedList testList = new LinkedList.Classes.LinkedList();
+            testList.Insert(5);
+            testList.Insert(2);
+            testList.Insert(3);
+            testList.Insert(1);
+
+            Assert.Equal("1 3 2 5 ", testList.ListToString());
+        }
+
+
+        [Fact]
         public void CanAddANodeToTheEndOfALinkedList()
         {
             LinkedList.Classes.LinkedList testList = new LinkedList.Classes.LinkedList();

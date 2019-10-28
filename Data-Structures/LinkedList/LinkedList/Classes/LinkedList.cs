@@ -12,7 +12,16 @@ namespace LinkedList.Classes
 
         public Node Insert(int value)
         {
-            Head = new Node(value);
+            Node newNode = new Node(value);
+            if(Head == null)
+            {
+                Head = newNode;
+            }
+            else
+            {
+                newNode.Next = Head;
+                Head = newNode;
+            }
             return Head;
         }
 
@@ -24,7 +33,7 @@ namespace LinkedList.Classes
                 return include;
             }
             Node current = Head;
-            while(current.Next != null)
+            while(current != null)
             {
                 if(current.Value == value)
                 {
@@ -35,18 +44,20 @@ namespace LinkedList.Classes
             return include;
         }
 
-        public void ListToString()
+        public string ListToString()
         {
+            string list = "";
             if (Head == null)
             {
-                Console.WriteLine("");
+                return list;
             }
             Node current = Head;
-            while (current.Next != null)
+            while (current != null)
             {
-                Console.Write($"{current.Value} ");
+                list = list + current.Value + " ";
                 current = current.Next;
             }
+            return list;
         }
 
         public void Append(int value)
