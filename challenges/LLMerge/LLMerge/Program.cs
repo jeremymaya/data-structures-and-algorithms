@@ -8,20 +8,38 @@ namespace LLMerge
     {
         static void Main(string[] args)
         {
-            LinkedList listOne = new LinkedList();
-            listOne.Append(1);
-            listOne.Append(3);
-            listOne.Append(2);
+            LinkedList ExampleOneListOne = new LinkedList();
+            ExampleOneListOne.Append(1);
+            ExampleOneListOne.Append(3);
+            ExampleOneListOne.Append(2);
 
-            LinkedList listTwo = new LinkedList();
-            listTwo.Append(5);
-            listTwo.Append(9);
-            listTwo.Append(4);
+            LinkedList ExampOneListTwo = new LinkedList();
+            ExampOneListTwo.Append(5);
+            ExampOneListTwo.Append(9);
+            ExampOneListTwo.Append(4);
 
-            var test = listOne.MergeLists(listOne, listTwo);
-            Console.WriteLine(test.Value);
-            Console.WriteLine(test.Next.Value);
-            Console.WriteLine(test.Next.Next.Value);
+            //var exampleOne = ExampleOneListOne.MergeLists(ExampleOneListOne, ExampOneListTwo);
+
+            LinkedList ExampleTwoListOne = new LinkedList();
+            ExampleTwoListOne.Append(1);
+            ExampleTwoListOne.Append(3);
+
+            LinkedList ExampleTwoListTwo = new LinkedList();
+            ExampleTwoListTwo.Append(5);
+            ExampleTwoListTwo.Append(9);
+            ExampleTwoListTwo.Append(4);
+
+            var exampleTwo = ExampleTwoListOne.MergeLists(ExampleTwoListOne, ExampleTwoListTwo) ;
+
+            LinkedList ExampleThreeListOne = new LinkedList();
+            ExampleThreeListOne.Append(1);
+            ExampleThreeListOne.Append(3);
+            ExampleThreeListOne.Append(2);
+
+            LinkedList ExampleThreeListTwo = new LinkedList();
+            ExampleThreeListTwo.Append(5);
+            ExampleThreeListTwo.Append(9);
+            ExampleThreeListTwo.Append(4);
         }
     }
 }
