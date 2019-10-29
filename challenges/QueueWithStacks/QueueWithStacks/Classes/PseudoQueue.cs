@@ -25,7 +25,7 @@ namespace QueueWithStacks.Classes
 
         public int Dequeue()
         {
-            int value = (int)stackTwo.Pop();
+            int value = (int)stackOne.Pop();
             return value;
         }
     }
