@@ -38,29 +38,49 @@ Create a brand new `PseudoQueue` class. This class will internally utilize 2 Sta
 ---
 
 ### Efficiency
-N/A
+| | Time | Space |
+|:-- | :----------- | :----------- |
+| Enqueue(value) | O(n) | O(1) |
+| Dequeue() | O(1) | O(1) |
 
 ---
 
 ### Solution
 #### Enqueue(value)
 ```C#
+public void Enqueue(int value)
+{
+    while(stackOne.Count != 0)
+    {
+        stackTwo.Push(stackOne.Pop());
+    }
 
+    stackOne.Push(value);
+
+    while (stackTwo.Count != 0)
+    {
+        stackOne.Push(stackTwo.Pop());
+    }
+}
 ```
 #### Dequeue()
 ```C#
-
+public int Dequeue()
+{
+    int value = (int)stackOne.Pop();
+    return value;
+}
 ```
 
 ---
 
 ### Link to Code
-https://github.com/jeremymaya/data-structures-and-algorithms-c-/blob/master/challenges/ArrayShift/ArrayShift/Program.cs
+https://github.com/jeremymaya/data-structures-and-algorithms-c-/blob/master/challenges/QueueWithStacks/QueueWithStacks/Program.cs
 
 ---
 
 ### Whiteboard Visual
-![queue-with-stack](https://github.com/jeremymaya/data-structures-and-algorithms-c-/blob/master/assets/array-shift.jpg)
+![queue-with-stack](https://github.com/jeremymaya/data-structures-and-algorithms-c-/blob/master/assets/queue-with-stacks.jpg)
 
 ---
 
