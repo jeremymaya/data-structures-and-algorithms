@@ -75,7 +75,7 @@ public int Dequeue()
 ---
 
 ### Link to Code
-https://github.com/jeremymaya/data-structures-and-algorithms-c-/blob/master/challenges/QueueWithStacks/QueueWithStacks/Program.cs
+https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/blob/master/challenges/QueueWithStacks/QueueWithStacks/Classes/PseudoQueue.cs
 
 ---
 
