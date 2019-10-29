@@ -8,19 +8,25 @@ namespace QueueWithStacks.Classes
         public Stack stackOne = new Stack();
         public Stack stackTwo = new Stack();
 
-        public void Enqueue(int num)
+        public void Enqueue(int value)
         {
             while(stackOne.Count != 0)
             {
                 stackTwo.Push(stackOne.Pop());
             }
 
-            stackOne.Push(num);
+            stackOne.Push(value);
 
             while (stackTwo.Count != 0)
             {
                 stackOne.Push(stackTwo.Pop());
             }
+        }
+
+        public int Dequeue()
+        {
+            int value = (int)stackTwo.Pop();
+            return value;
         }
     }
 }
