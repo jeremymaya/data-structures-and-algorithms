@@ -85,4 +85,4 @@ https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/blob/master
 ---
 
 ### Change Log
-1.0: *Code Challenge 11 Started, Initial submission* - 28 Oct 2019  
+1.0: *Code Challenge 11 completed, Initial submission* - 28 Oct 2019  
