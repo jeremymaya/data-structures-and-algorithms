@@ -1,14 +1,14 @@
 ﻿using System;
-using System.Collections;
+using System.Collections.Generic;
 
 namespace FIFOAnimalShelter.Classes
 {
     public class AnimalShelter
     {
-        public Stack stackOne = new Stack();
-        public Stack stackTwo = new Stack();
+        public Stack<Animal> stackOne = new Stack<Animal>();
+        public Stack<Animal> stackTwo = new Stack<Animal>();
 
-        public void Enqueue(object animal)
+        public void Enqueue(Animal animal)
         {
             while (stackOne.Count != 0)
             {
@@ -21,6 +21,34 @@ namespace FIFOAnimalShelter.Classes
             {
                 stackOne.Push(stackTwo.Pop());
             }
+        }
+
+        public Animal Dequeue(string pref)
+        {
+            if(pref == "dog")
+            {
+                while (stackOne.Peek().GetType() != typeof(Dog))
+                {
+                    stackOne.Push(stackTwo.Pop());
+                }
+            }
+            else if (pref == "cat")
+            {
+                while (stackOne.Peek().GetType() != typeof(Cat))
+                {
+                    stackOne.Push(stackTwo.Pop());
+                }
+            }
+            else if (pref != "dog" || pref != "cat")
+            {
+                return null;
+            }
+
+            Animal animal = stackOne.Pop();
+
+            stackOne.Push(stackTwo.Pop());
+
+            return animal;
         }
     }
 }
