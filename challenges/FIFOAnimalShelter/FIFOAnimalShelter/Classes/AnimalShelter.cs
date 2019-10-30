@@ -46,7 +46,10 @@ namespace FIFOAnimalShelter.Classes
 
             Animal animal = stackOne.Pop();
 
-            stackOne.Push(stackTwo.Pop());
+            while (stackTwo.Count != 0)
+            {
+                stackOne.Push(stackTwo.Pop());
+            }
 
             return animal;
         }
