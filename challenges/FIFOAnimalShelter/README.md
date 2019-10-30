@@ -52,11 +52,53 @@ Implement the following methods:
 ### Solution
 #### Enqueue(value)
 ```C#
+public void Enqueue(Animal animal)
+{
+    while (stackOne.Count != 0)
+    {
+        stackTwo.Push(stackOne.Pop());
+    }
 
+    stackOne.Push(animal);
+
+    while (stackTwo.Count != 0)
+    {
+        stackOne.Push(stackTwo.Pop());
+    }
+}
 ```
 #### Dequeue()
 ```C#
+public Animal Dequeue(string pref)
+{
+    if(pref == "dog")
+    {
+        while (stackOne.Peek().GetType() != typeof(Dog))
+        {
+            stackTwo.Push(stackOne.Pop());
+        }
+    }
+    else if (pref == "cat")
+    {
+        while (stackOne.Peek().GetType() != typeof(Cat))
+        {
+            stackTwo.Push(stackOne.Pop());
+        }
+    }
+    else if (pref != "dog" || pref != "cat")
+    {
+        return null;
+    }
 
+    Animal animal = stackOne.Pop();
+
+    while (stackTwo.Count != 0)
+    {
+        stackOne.Push(stackTwo.Pop());
+    }
+
+    return animal;
+}
 ```
 
 ---
@@ -67,9 +109,9 @@ https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/blob/master
 ---
 
 ### Whiteboard Visual
-![fifo-animal-shelter](https://github.com/jeremymaya/data-structures-and-algorithms-c-/blob/master/assets/fifo-animal-shelter.jpg)
+![fifo-animal-shelter](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/blob/master/assets/fifo-animal-shleter.jpg)
 
 ---
 
 ### Change Log
-1.0: *Code Challenge 12 completed, Initial submission* - 29 Oct 2019
+1.0: *Code Challenge 12 completed, Initial submission* - 30 Oct 2019
