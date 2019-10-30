@@ -29,14 +29,14 @@ namespace FIFOAnimalShelter.Classes
             {
                 while (stackOne.Peek().GetType() != typeof(Dog))
                 {
-                    stackOne.Push(stackTwo.Pop());
+                    stackTwo.Push(stackOne.Pop());
                 }
             }
             else if (pref == "cat")
             {
                 while (stackOne.Peek().GetType() != typeof(Cat))
                 {
-                    stackOne.Push(stackTwo.Pop());
+                    stackTwo.Push(stackOne.Pop());
                 }
             }
             else if (pref != "dog" || pref != "cat")
