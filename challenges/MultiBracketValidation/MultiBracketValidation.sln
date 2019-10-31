@@ -1,9 +1,9 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29403.142
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiBracketValidation", "MultiBracketValidation.csproj", "{B0A01336-9780-421F-8293-92F148949110}"
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiBracketValidation", "MultiBracketValidation\MultiBracketValidation.csproj", "{4BA0C787-1D94-410B-893D-AA5E07660919}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeChallenge13Test", "CodeChallenge13Test\CodeChallenge13Test.csproj", "{D7A51B02-1F79-4428-9345-6C8D95476F00}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,13 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B0A01336-9780-421F-8293-92F148949110}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B0A01336-9780-421F-8293-92F148949110}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B0A01336-9780-421F-8293-92F148949110}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B0A01336-9780-421F-8293-92F148949110}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {36222072-1389-4148-BE30-F608D825A67B}
+		{4BA0C787-1D94-410B-893D-AA5E07660919}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BA0C787-1D94-410B-893D-AA5E07660919}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BA0C787-1D94-410B-893D-AA5E07660919}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BA0C787-1D94-410B-893D-AA5E07660919}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7A51B02-1F79-4428-9345-6C8D95476F00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7A51B02-1F79-4428-9345-6C8D95476F00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7A51B02-1F79-4428-9345-6C8D95476F00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7A51B02-1F79-4428-9345-6C8D95476F00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
