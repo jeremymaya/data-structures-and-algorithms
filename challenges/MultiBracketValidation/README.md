@@ -29,62 +29,84 @@ Write a function called public static bool MultiBracketValidation(string input).
 ---
 
 ### Approach
-1. Set a search range:
-    1. left = 0
-	2. right = length of the array - 1
-2. Find the middle index
-3. Compare the search key against a value of at the middle index
-	1. If the value == search key, return the middle index value
-	2. If the value < search key, right = middle index value - 1 and repeat from step 2
-	3. If the value > search key, left = middle index value + 1 and repeat from step 2
 
 ---
 
 ### Efficiency
-N/A
+| | Time | Space |
+|:-- | :----------- | :----------- |
+| MultiBracketValidation(string input) | O(n) | O(1) |
 
 ---
 
 ### Solution
 ```C#
-public static int SearchBinary(int[] arr, int num)
+public static bool MultiHBracketValidation(string input)
 {
-    int left = 0;
-    int right = arr.Length - 1;
-    int index = -1;
-    while(left <= right)
+    var bracketsOpening = new List<string>();
+    var bracketsClosing = new List<string>();
+
+    bool balanced = false;
+
+    for (int i = 0; i < input.Length; i++)
     {
-        int mid = (left + right) / 2;
-        Console.WriteLine(mid);
-        if (arr[mid] == num)
+        if (input[i].ToString() == "{" ||
+            input[i].ToString() == "(" ||
+            input[i].ToString() == "[")
         {
-            index = mid;
-            right = -1;
+            bracketsOpening.Add(input[i].ToString());
         }
-        else if (arr[mid] > num)
+        else if (input[i].ToString() == "}" ||
+                input[i].ToString() == ")" ||
+                input[i].ToString() == "]")
         {
-            right = mid - 1;
-        }
-        else if (arr[mid] < num)
-        {
-            left = mid + 1;
+            bracketsClosing.Add(input[i].ToString());
         }
     }
-    return index;
+
+    if (bracketsOpening.Count == bracketsClosing.Count)
+    {
+        for (int i = 0; i < bracketsOpening.Count; i++)
+        {
+            if (bracketsOpening[i] == "{" && bracketsClosing[i] == "}")
+            {
+                balanced = true;
+            }
+            else if (bracketsOpening[i] == "(" && bracketsClosing[i] == ")")
+            {
+                balanced = true;
+            }
+            else if (bracketsOpening[i] == "[" && bracketsClosing[i] == "]")
+            {
+                balanced = true;
+            }
+        }
+        if (input.Contains("{)") ||
+            input.Contains("{]") ||
+            input.Contains("(}") ||
+            input.Contains("(]") ||
+            input.Contains("[}") ||
+            input.Contains("[)"))
+        {
+            balanced = false;
+        }
+    }
+
+    return balanced;
 }
 ```
 
 ---
 
 ### Link to Code
-https://github.com/jeremymaya/data-structures-and-algorithms-c-/blob/master/challenges/SearchBinary/SearchBinary/Program.cs
+https://github.com/jeremymaya/data-structures-and-algorithms-c-/blob/master/challenges/MultiBracketValidation/MultiBracketValidation/Program.cs
 
 ---
 
 ### Whiteboard Visual
-![array-binary-search](https://github.com/jeremymaya/data-structures-and-algorithms-c-/blob/master/assets/array-binary-search.jpg)
+![multi-bracket-validation](https://github.com/jeremymaya/data-structures-and-algorithms-c-/blob/master/assets/multi-bracket-validation.jpg)
 
 ---
 
 ### Change Log
-1.0: *Code Challenge 03 Completed, Initial submission* - 18 Oct 2019  
+1.0: *Code Challenge 13 Completed, Initial submission* - 31 Oct 2019  
