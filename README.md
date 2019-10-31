@@ -7,7 +7,8 @@
 3. [Linked List](https://github.com/jeremymaya/data-structures-and-algorithms-c-/tree/master/Data%20Structures/LinkedList)
 4. [Linked List Merge](https://github.com/jeremymaya/data-structures-and-algorithms-c-/tree/master/challenges/LLMerge)
 5. [Queue With Stacks](https://github.com/jeremymaya/data-structures-and-algorithms-c-/tree/master/challenges/QueueWithStacks)
-5. [FIFO Animal Shelter](https://github.com/jeremymaya/data-structures-and-algorithms-c-/tree/master/challenges/FIFOAnimalShelter)
+6. [FIFO Animal Shelter](https://github.com/jeremymaya/data-structures-and-algorithms-c-/tree/master/challenges/FIFOAnimalShelter)
+7. [Multi Bracket Validation](https://github.com/jeremymaya/data-structures-and-algorithms-c-/tree/master/challenges/MultiBracketValidation)
 
 ---
 
