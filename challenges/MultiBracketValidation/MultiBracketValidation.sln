@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.29403.142
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiBracketValidation", "MultiBracketValidation.csproj", "{B0A01336-9780-421F-8293-92F148949110}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeChallenge13Test", "..\CodeChallenge13Test\CodeChallenge13Test.csproj", "{6E71DD6C-7F9D-419A-B746-9F85448BAECB}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{B0A01336-9780-421F-8293-92F148949110}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0A01336-9780-421F-8293-92F148949110}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0A01336-9780-421F-8293-92F148949110}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6E71DD6C-7F9D-419A-B746-9F85448BAECB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6E71DD6C-7F9D-419A-B746-9F85448BAECB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6E71DD6C-7F9D-419A-B746-9F85448BAECB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6E71DD6C-7F9D-419A-B746-9F85448BAECB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
