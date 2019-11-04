@@ -269,6 +269,7 @@ public bool IsEmpty()
 https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/blob/master/Data-Structures/StacksAndQueues/StacksAndQueues/Classes/Stack.cs
 #### Queue
 https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/blob/master/Data-Structures/StacksAndQueues/StacksAndQueues/Classes/Queue.cs
+
 ---
 
 ### Whiteboard Visual
