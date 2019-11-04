@@ -75,5 +75,14 @@ namespace CodeChallenge10Test
             Assert.True(testStack.IsEmpty());
         }
 
+        [Fact]
+        public void CanSuccessfullyEnqueueIntoAQueue()
+        {
+            Queue testQueue = new Queue();
+            testQueue.QueueTheValue(1);
+
+            Assert.Equal(1, testQueue.Front.Value);
+        }
+
     }
 }

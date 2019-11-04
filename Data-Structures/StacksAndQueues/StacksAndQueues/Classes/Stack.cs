@@ -10,10 +10,17 @@ namespace StacksAndQueues.Classes
 
         public void Push(int value)
         {
-            Node topNext = Top;
-            Node newTop = new Node(value);
-            Top = newTop;
-            Top.Next = topNext;
+            if(Top == null)
+            {
+                Top = new Node(value);
+            }
+            else
+            {
+                Node topNext = Top;
+                Node newTop = new Node(value);
+                Top = newTop;
+                Top.Next = topNext;
+            }
         }
 
         public int Pop()
@@ -27,6 +34,7 @@ namespace StacksAndQueues.Classes
 
             return value;
         }
+
         public int Peek()
         {
             if (Top == null)
