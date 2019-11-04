@@ -27,17 +27,18 @@ namespace StacksAndQueues.Classes
             }
         }
 
-        //public int Dequeue()
-        //{
-        //    if (Top == null)
-        //    {
-        //        Console.WriteLine("Stack is empty");
-        //    }
-        //    int value = Top.Value;
-        //    Top = Top.Next;
+        public int Dequeue()
+        {
+            if (Front == null)
+            {
+                Console.WriteLine("Queue is empty");
+            }
+            int value = Front.Value;
+            Front = Front.Next;
 
-        //    return value;
-        //}
+            return value;
+        }
+
         //public int Peek()
         //{
         //    if (Top == null)

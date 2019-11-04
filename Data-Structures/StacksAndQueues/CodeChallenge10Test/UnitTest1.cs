@@ -84,5 +84,34 @@ namespace CodeChallenge10Test
             Assert.Equal(1, testQueue.Front.Value);
         }
 
+        [Fact]
+        public void CanSuccessfullyEnqueueMultipleValuesIntoAQueueFront()
+        {
+            Queue testQueue = new Queue();
+            testQueue.QueueTheValue(1);
+            testQueue.QueueTheValue(2);
+
+            Assert.Equal(1, testQueue.Front.Value);
+        }
+
+        [Fact]
+        public void CanSuccessfullyEnqueueMultipleValuesIntoAQueueEnd()
+        {
+            Queue testQueue = new Queue();
+            testQueue.QueueTheValue(1);
+            testQueue.QueueTheValue(2);
+
+            Assert.Equal(2, testQueue.Front.Next.Value);
+        }
+
+        [Fact]
+        public void CanSuccessfullyDequeueOutOfAQueueTheExpectedValue()
+        {
+            Queue testQueue = new Queue();
+            testQueue.QueueTheValue(1);
+            testQueue.QueueTheValue(2);
+
+            Assert.Equal(1, testQueue.Dequeue());
+        }
     }
 }
