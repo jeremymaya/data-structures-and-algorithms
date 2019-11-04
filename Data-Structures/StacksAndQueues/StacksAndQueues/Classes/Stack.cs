@@ -31,5 +31,15 @@ namespace StacksAndQueues.Classes
 
             return value;
         }
+        public int Peek()
+        {
+            if (Top == null)
+            {
+                Console.WriteLine("Stack is empty");
+            }
+            int value = Top.Value;
+ 
+            return value;
+        }
     }
 }

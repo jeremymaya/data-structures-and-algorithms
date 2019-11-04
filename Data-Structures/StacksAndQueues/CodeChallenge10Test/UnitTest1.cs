@@ -55,5 +55,15 @@ namespace CodeChallenge10Test
             Assert.Equal(2, testStack.Pop());
         }
 
+        [Fact]
+        public void CanSuccessfullyPeekTheNextItemOnTheStack()
+        {
+            Stack testStack = new Stack();
+            testStack.Push(1);
+            testStack.Push(2);
+
+            Assert.Equal(2, testStack.Peek());
+        }
+
     }
 }
