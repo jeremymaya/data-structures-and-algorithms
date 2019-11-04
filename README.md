@@ -9,6 +9,7 @@
 5. [Queue With Stacks](https://github.com/jeremymaya/data-structures-and-algorithms-c-/tree/master/challenges/QueueWithStacks)
 6. [FIFO Animal Shelter](https://github.com/jeremymaya/data-structures-and-algorithms-c-/tree/master/challenges/FIFOAnimalShelter)
 7. [Multi Bracket Validation](https://github.com/jeremymaya/data-structures-and-algorithms-c-/tree/master/challenges/MultiBracketValidation)
+8. [Stacks And Queues](https://github.com/jeremymaya/data-structures-and-algorithms-c-/tree/master/Data%20Structures/StackAndQueue)
 
 ---
 
