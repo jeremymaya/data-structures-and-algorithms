@@ -14,9 +14,22 @@ namespace StacksAndQueues.Classes
             {
                 Top = new Node(value);
             }
+            Node topNext = Top;
             Node newTop = new Node(value);
-            Top.Next = newTop;
+            Top = newTop;
+            Top.Next = topNext;
+        }
+
+        public int Pop()
+        {
+            if(Top == null)
+            {
+                Console.WriteLine("Stack is empty");
+            }
+            int value = Top.Value;
             Top = Top.Next;
+
+            return value;
         }
     }
 }
