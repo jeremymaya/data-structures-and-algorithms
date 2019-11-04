@@ -50,15 +50,15 @@ namespace StacksAndQueues.Classes
             return value;
         }
 
-        //public bool IsEmpty()
-        //{
-        //    bool empty = false;
-        //    if (Top == null)
-        //    {
-        //        empty = true;
-        //        return empty;
-        //    }
-        //    return empty;
-        //}
+        public bool IsEmpty()
+        {
+            bool empty = false;
+            if (Front == null)
+            {
+                empty = true;
+                return empty;
+            }
+            return empty;
+        }
     }
 }

@@ -123,5 +123,25 @@ namespace CodeChallenge10Test
 
             Assert.Equal(1, testQueue.Peek());
         }
+
+        [Fact]
+        public void CanSuccessfullyEmptyAQueueAfterMultipleDequeues()
+        {
+            Queue testQueue = new Queue();
+            testQueue.QueueTheValue(1);
+            testQueue.QueueTheValue(2);
+            testQueue.Dequeue();
+            testQueue.Dequeue();
+
+            Assert.True(testQueue.IsEmpty());
+        }
+
+        [Fact]
+        public void CanSuccessfullyInstantiateAnEmptyQueue()
+        {
+            Queue testQueue = new Queue();
+
+            Assert.True(testQueue.IsEmpty());
+        }
     }
 }
