@@ -51,8 +51,10 @@ namespace CodeChallenge10Test
             Stack testStack = new Stack();
             testStack.Push(1);
             testStack.Push(2);
+            testStack.Pop();
+            testStack.Pop();
 
-            Assert.Equal(2, testStack.Pop());
+            Assert.True(testStack.IsEmpty());
         }
 
         [Fact]
@@ -63,6 +65,14 @@ namespace CodeChallenge10Test
             testStack.Push(2);
 
             Assert.Equal(2, testStack.Peek());
+        }
+
+        [Fact]
+        public void CanSuccessfullyInstantiateAnEmptyStack()
+        {
+            Stack testStack = new Stack();
+
+            Assert.True(testStack.IsEmpty());
         }
 
     }

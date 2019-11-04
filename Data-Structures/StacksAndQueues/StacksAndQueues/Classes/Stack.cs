@@ -10,10 +10,6 @@ namespace StacksAndQueues.Classes
 
         public void Push(int value)
         {
-            if(Top == null)
-            {
-                Top = new Node(value);
-            }
             Node topNext = Top;
             Node newTop = new Node(value);
             Top = newTop;
@@ -40,6 +36,17 @@ namespace StacksAndQueues.Classes
             int value = Top.Value;
  
             return value;
+        }
+
+        public bool IsEmpty()
+        {
+            bool empty = false;
+            if(Top == null)
+            {
+                empty = true;
+                return empty;
+            }
+            return empty;
         }
     }
 }
