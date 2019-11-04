@@ -113,5 +113,15 @@ namespace CodeChallenge10Test
 
             Assert.Equal(1, testQueue.Dequeue());
         }
+
+        [Fact]
+        public void CanSuccessfullyPeekIntoAQueueSeeingTheExpectedValue()
+        {
+            Queue testQueue = new Queue();
+            testQueue.QueueTheValue(1);
+            testQueue.QueueTheValue(2);
+
+            Assert.Equal(1, testQueue.Peek());
+        }
     }
 }
