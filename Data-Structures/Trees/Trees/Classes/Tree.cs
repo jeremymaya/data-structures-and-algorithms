@@ -87,5 +87,30 @@ namespace Trees.Classes
 
             traversal.Add(node.Value);
         }
+
+        public List<T> BreadthFirst(Node<T> node)
+        {
+            Queue<Node<T>> breadth = new Queue<Node<T>>();
+            List<T> values = new List<T>();
+
+            breadth.Enqueue(node);
+
+            while(breadth.TryPeek(out node))
+            {
+                Node<T> front = breadth.Dequeue();
+                values.Add(front.Value);
+
+                if (front.LeftChild != null)
+                {
+                    breadth.Enqueue(front.LeftChild);
+                }
+
+                if (front.RightChild != null)
+                {
+                    breadth.Enqueue(front.RightChild);
+                }
+            }
+            return values;
+        }
     }
 }
