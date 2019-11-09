@@ -247,7 +247,8 @@ public bool Contains(Node<int> node, int value)
 ---
 
 ### Credits
-* [Code Fellows](https://codefellows.github.io/common_curriculum/data_structures_and_algorithms/Code_401/class-15/resources/Trees.html) * [JournalDev](https://www.journaldev.com/23086/binary-search-tree-bst-search-insert-remove)
+* [Code Fellows](https://codefellows.github.io/common_curriculum/data_structures_and_algorithms/Code_401/class-15/resources/Trees.html)
+* [JournalDev](https://www.journaldev.com/23086/binary-search-tree-bst-search-insert-remove)
 
 ### Change Log
 1.0: *Code Challenge 15 and 17 completed* - 09 Nov 2019  
