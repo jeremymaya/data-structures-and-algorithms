@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace StacksAndQueues
+namespace Trees
 {
     class Program
     {
