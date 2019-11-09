@@ -8,7 +8,7 @@ namespace Trees.Classes
         public Node<T> Root { get; set; }
 
         /// <summary>
-        /// Constructor method that creates a tree with a root node
+        /// Constructor method that creates a BinaryTree object with a root node
         /// </summary>
         /// <param name="value"></param>
         public BinaryTree(T value)
@@ -17,7 +17,7 @@ namespace Trees.Classes
         }
 
         /// <summary>
-        /// Contructor method to create an empty tree 
+        /// Contructor method that creates an empty BinarySearchTree object
         /// </summary>
         public BinaryTree()
         {
