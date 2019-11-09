@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Trees.Classes
 {
-    public class Tree<T>
+    public class BinaryTree<T>
     {
         public Node<T> Root { get; set; }
 
@@ -11,7 +11,7 @@ namespace Trees.Classes
         /// Constructor method that creates a tree with a root node
         /// </summary>
         /// <param name="value"></param>
-        public Tree(T value)
+        public BinaryTree(T value)
         {
             Root = new Node<T>(value);
         }
@@ -19,7 +19,7 @@ namespace Trees.Classes
         /// <summary>
         /// Contructor method to create an empty tree 
         /// </summary>
-        public Tree()
+        public BinaryTree()
         {
 
         }

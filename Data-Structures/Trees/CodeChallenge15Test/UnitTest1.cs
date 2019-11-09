@@ -10,7 +10,7 @@ namespace CodeChallenge15Test
         [Fact]
         public void CanSuccessfullyInstantiateAnEmptyTree()
         {
-            Tree<int> testTree = new Tree<int>();
+            BinaryTree<int> testTree = new BinaryTree<int>();
 
             Assert.Null(testTree.Root);
         }
@@ -18,7 +18,7 @@ namespace CodeChallenge15Test
         [Fact]
         public void CanSuccessfullyInstantiateATreeWithASingleRootNode()
         {
-            Tree<int> testTree = new Tree<int>(1);
+            BinaryTree<int> testTree = new BinaryTree<int>(1);
 
             Assert.Equal(1, testTree.Root.Value);
         }
@@ -26,7 +26,7 @@ namespace CodeChallenge15Test
         [Fact]
         public void CanSuccessfullyAddALeftChildAndRightChildToASingleRootNode()
         {
-            Tree<int> testTree = new Tree<int>(1);
+            BinaryTree<int> testTree = new BinaryTree<int>(1);
             testTree.Root.LeftChild = new Node<int>(2);
             testTree.Root.RightChild = new Node<int>(3);
 
@@ -37,7 +37,7 @@ namespace CodeChallenge15Test
         [Fact]
         public void CanSuccessfullyReturnACollectionFromAPreorderTraversal()
         {
-            Tree<int> testTree = new Tree<int>(1);
+            BinaryTree<int> testTree = new BinaryTree<int>(1);
             testTree.Root.LeftChild = new Node<int>(2);
             testTree.Root.RightChild = new Node<int>(3);
 
@@ -47,7 +47,7 @@ namespace CodeChallenge15Test
         [Fact]
         public void CanSuccessfullyReturnACollectionFromAnInorderTraversal()
         {
-            Tree<int> testTree = new Tree<int>(1);
+            BinaryTree<int> testTree = new BinaryTree<int>(1);
             testTree.Root.LeftChild = new Node<int>(2);
             testTree.Root.RightChild = new Node<int>(3);
 
@@ -57,7 +57,7 @@ namespace CodeChallenge15Test
         [Fact]
         public void CanSuccessfullyReturnACollectionFromAPostorderTraversal()
         {
-            Tree<int> testTree = new Tree<int>(1);
+            BinaryTree<int> testTree = new BinaryTree<int>(1);
             testTree.Root.LeftChild = new Node<int>(2);
             testTree.Root.RightChild = new Node<int>(3);
 
@@ -67,7 +67,7 @@ namespace CodeChallenge15Test
         [Fact]
         public void CanSuccessfullyReturnACollectionFromABreadthFirstTraversal()
         {
-            Tree<int> testTree = new Tree<int>(2);
+            BinaryTree<int> testTree = new BinaryTree<int>(2);
 
             testTree.Root.LeftChild = new Node<int>(7);
             testTree.Root.LeftChild.LeftChild = new Node<int>(2);
@@ -80,6 +80,18 @@ namespace CodeChallenge15Test
             testTree.Root.RightChild.RightChild.LeftChild = new Node<int>(4);
 
             Assert.Equal(new List<int> { 2, 7, 5, 2, 6, 9, 5, 11, 4 }, testTree.BreadthFirst(testTree.Root));
+        }
+
+        [Fact]
+        public void CanSuccessfullyAddAVakyeToBinarySearchTree()
+        {
+            BinarySearchTree testTree = new BinarySearchTree(10);
+            testTree.Add(testTree.Root, 5);
+            testTree.Add(testTree.Root, 15);
+            testTree.Add(testTree.Root, 3);
+            testTree.Add(testTree.Root, 6);
+
+            Assert.Equal(6, testTree.Root.LeftChild.RightChild.Value);
         }
     }
 }
