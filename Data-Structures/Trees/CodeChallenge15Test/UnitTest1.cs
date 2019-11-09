@@ -63,5 +63,23 @@ namespace CodeChallenge15Test
 
             Assert.Equal(new List<int> { 2, 3, 1 }, testTree.PostOrder(testTree.Root));
         }
+
+        [Fact]
+        public void CanSuccessfullyReturnACollectionFromABreadthFirstTraversal()
+        {
+            Tree<int> testTree = new Tree<int>(2);
+
+            testTree.Root.LeftChild = new Node<int>(7);
+            testTree.Root.LeftChild.LeftChild = new Node<int>(2);
+            testTree.Root.LeftChild.RightChild = new Node<int>(6);
+            testTree.Root.LeftChild.RightChild.LeftChild = new Node<int>(5);
+            testTree.Root.LeftChild.RightChild.RightChild = new Node<int>(11);
+
+            testTree.Root.RightChild = new Node<int>(5);
+            testTree.Root.RightChild.RightChild = new Node<int>(9);
+            testTree.Root.RightChild.RightChild.LeftChild = new Node<int>(4);
+
+            Assert.Equal(new List<int> { 2, 7, 5, 2, 6, 9, 5, 11, 4 }, testTree.BreadthFirst(testTree.Root));
+        }
     }
 }
