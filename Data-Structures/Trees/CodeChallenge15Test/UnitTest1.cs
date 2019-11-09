@@ -83,7 +83,23 @@ namespace CodeChallenge15Test
         }
 
         [Fact]
-        public void CanSuccessfullyAddAVakyeToBinarySearchTree()
+        public void CanSuccessfullyInstantiateAnEmptyBinarySearchTree()
+        {
+            BinarySearchTree testTree = new BinarySearchTree();
+
+            Assert.Null(testTree.Root);
+        }
+
+        [Fact]
+        public void CanSuccessfullyInstantiateABinarySearchTreeWithASingleRootNode()
+        {
+            BinarySearchTree testTree = new BinarySearchTree(10);
+
+            Assert.Equal(10, testTree.Root.Value);
+        }
+
+        [Fact]
+        public void CanSuccessfullyAddAValuesToBinarySearchTree()
         {
             BinarySearchTree testTree = new BinarySearchTree(10);
             testTree.Add(testTree.Root, 5);
@@ -92,6 +108,30 @@ namespace CodeChallenge15Test
             testTree.Add(testTree.Root, 6);
 
             Assert.Equal(6, testTree.Root.LeftChild.RightChild.Value);
+        }
+
+        [Fact]
+        public void CanSuccessfullyReturnTrueWhenTheValuesIsInBinarySearchTree()
+        {
+            BinarySearchTree testTree = new BinarySearchTree(10);
+            testTree.Add(testTree.Root, 5);
+            testTree.Add(testTree.Root, 15);
+            testTree.Add(testTree.Root, 3);
+            testTree.Add(testTree.Root, 6);
+
+            Assert.True(testTree.Contains(testTree.Root, 3));
+        }
+
+        [Fact]
+        public void CanSuccessfullyReturnFalseWhenTheValuesIsNotInBinarySearchTree()
+        {
+            BinarySearchTree testTree = new BinarySearchTree(10);
+            testTree.Add(testTree.Root, 5);
+            testTree.Add(testTree.Root, 15);
+            testTree.Add(testTree.Root, 3);
+            testTree.Add(testTree.Root, 6);
+
+            Assert.False(testTree.Contains(testTree.Root, 1));
         }
     }
 }

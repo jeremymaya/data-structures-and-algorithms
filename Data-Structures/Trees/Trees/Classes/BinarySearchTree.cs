@@ -21,15 +21,15 @@ namespace Trees.Classes
 
         public Node<int> Add(Node<int> node, int value)
         {
-            if(node == null)
+            if (node == null)
             {
                 return new Node<int>(value);
             }
-
-            if (value < node.Value)
+            else if (node.Value > value)
             {
                 node.LeftChild = Add(node.LeftChild, value);
-            } else if (value > node.Value)
+            }
+            else if (node.Value < value)
             {
                 node.RightChild = Add(node.RightChild, value);
             }
@@ -37,9 +37,26 @@ namespace Trees.Classes
             return node;
         }
 
-        public void Conntains()
+        public bool Contains(Node<int> node, int value)
         {
+            if (node == null)
+            {
+                return false;
+            }
+            else if (node.Value == value)
+            {
+                return true;
+            }
+            else if (node.Value > value)
+            {
+                return Contains(node.LeftChild, value);
+            }
+            else if (node.Value < value)
+            {
+                return Contains(node.RightChild, value);
+            }
 
+            return false;
         }
     }
 }

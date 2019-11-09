@@ -184,5 +184,8 @@ https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/blob/master
 
 ---
 
+### Credits
+https://www.journaldev.com/23086/binary-search-tree-bst-search-insert-remove
+
 ### Change Log
 1.0: *Code Challenge 15 Started* - 07 Nov 2019  
