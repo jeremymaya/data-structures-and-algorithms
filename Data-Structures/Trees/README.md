@@ -241,13 +241,13 @@ public bool Contains(Node<int> node, int value)
 ---
 
 ### Link to Code
-https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/blob/master/Data-Structures/Trees/Trees/Classes/Tree.cs
+* [Binary Tree](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/blob/master/Data-Structures/Trees/Trees/Classes/BinaryTree.cs)
+* [Binary Search Tree](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/blob/master/Data-Structures/Trees/Trees/Classes/BinarySearchTree.cs)
 
 ---
 
 ### Credits
-[Code Fellows](https://codefellows.github.io/common_curriculum/data_structures_and_algorithms/Code_401/class-15/resources/Trees.html)  
-[JournalDev](https://www.journaldev.com/23086/binary-search-tree-bst-search-insert-remove)
+* [Code Fellows](https://codefellows.github.io/common_curriculum/data_structures_and_algorithms/Code_401/class-15/resources/Trees.html) * [JournalDev](https://www.journaldev.com/23086/binary-search-tree-bst-search-insert-remove)
 
 ### Change Log
 1.0: *Code Challenge 15 and 17 completed* - 09 Nov 2019  
