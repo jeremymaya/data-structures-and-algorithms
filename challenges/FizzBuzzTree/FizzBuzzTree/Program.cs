@@ -19,11 +19,9 @@ namespace FizzBuzzTree
 
             Console.WriteLine(String.Join(", ", tree.BreadthFirst(tree.Root)));
 
-            BinaryTree<object> treeNew = FizzBuzz(tree);
+            BinaryTree<object> fizzBuzzTree = FizzBuzz(tree);
 
-            Console.WriteLine(String.Join(", ", treeNew.BreadthFirst(treeNew.Root)));
-
-
+            Console.WriteLine(String.Join(", ", fizzBuzzTree.BreadthFirst(fizzBuzzTree.Root)));
         }
 
         public static BinaryTree<object> FizzBuzz(BinaryTree<object> tree)
