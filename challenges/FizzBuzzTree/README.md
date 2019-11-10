@@ -8,9 +8,9 @@
 ### Problem Domain
 Write a function called FizzBuzzTree which takes a tree as an argument.  
 Without utilizing any of the built-in methods available to your language, determine weather or not the value of each node is divisible by 3, 5 or both, and change the value of each of the nodes:
-* If the value is divisible by 3, replace the value with ìFizzî
-* If the value is divisible by 5, replace the value with ìBuzzî
-* If the value is divisible by 3 and 5, replace the value with ìFizzBuzzî
+* If the value is divisible by 3, replace the value with ‚ÄúFizz‚Äù
+* If the value is divisible by 5, replace the value with ‚ÄúBuzz‚Äù
+* If the value is divisible by 3 and 5, replace the value with ‚ÄúFizzBuzz‚Äù
 
 Return the tree with its new values.
 
@@ -88,7 +88,7 @@ https://github.com/jeremymaya/data-structures-and-algorithms-c-/blob/master/chal
 ---
 
 ### Whiteboard Visual
-![fizzbuzz-tree](https://github.com/jeremymaya/data-structures-and-algorithms-c-/blob/master/assets/fizzbuzz-tree.jpg)
+![fizzbuzz-tree](https://github.com/jeremymaya/data-structures-and-algorithms-c-/blob/master/assets/fizzbuzz-tree-rotated.jpg)
 
 ---
 
