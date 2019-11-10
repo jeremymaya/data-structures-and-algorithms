@@ -11,6 +11,7 @@
 7. [Multi Bracket Validation](https://github.com/jeremymaya/data-structures-and-algorithms-c-/tree/master/challenges/MultiBracketValidation)
 8. [Stacks And Queues](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/Data-Structures/StacksAndQueues)
 9. [Trees](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/Data-Structures/Trees)
+10. [FizzBuzz Tree](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/challenges/FizzBuzzTree)
 
 ---
 
