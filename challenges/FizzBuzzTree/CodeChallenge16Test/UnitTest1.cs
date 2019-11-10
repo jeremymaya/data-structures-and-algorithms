@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Xunit;
-using static FizzBuzzTree.Program;
+using FizzBuzzTree;
 using FizzBuzzTree.Classes;
 
 namespace CodeChallenge16Test
@@ -72,9 +72,9 @@ namespace CodeChallenge16Test
             testTree.Root.RightChild.LeftChild = new Node<object>(6);
             testTree.Root.RightChild.RightChild = new Node<object>(5);
 
-            BinaryTree<object> fizzBuzzTree = FizzBuzz(testTree);
+            BinaryTree<object> fizzBuzzTestTree = Program.FizzBuzzTree(testTree);
 
-            Assert.Equal(new List<object> { 1, 2, "Fizz", 4, "FizzBuzz", "Fizz", "Buzz" }, testTree.BreadthFirst(testTree.Root));
+            Assert.Equal(new List<object> { 1, 2, "Fizz", 4, "FizzBuzz", "Fizz", "Buzz" }, fizzBuzzTestTree.BreadthFirst(fizzBuzzTestTree.Root));
         }
     }
 }
