@@ -24,6 +24,11 @@ namespace FizzBuzzTree
             Console.WriteLine(String.Join(", ", fizzBuzzTree.BreadthFirst(fizzBuzzTree.Root)));
         }
 
+        /// <summary>
+        /// A non-resursive method that creates a reference node to the Root and returns a tree with new values after invoking resursive helper method FizzBuzz
+        /// </summary>
+        /// <param name="tree"></param>
+        /// <returns></returns>
         public static BinaryTree<object> FizzBuzz(BinaryTree<object> tree)
         {
             Node<object> node = tree.Root;
@@ -33,6 +38,14 @@ namespace FizzBuzzTree
             return tree;
         }
 
+        /// <summary>
+        /// A recursive helper method that uses PreOrder method to traverse the tree and:
+        /// 1. Checks if the node value meets any of FizzBuzz conditions and update the value accordingly
+        /// 2. Invokes FizzBuzz method until there is no more LeftChild node
+        /// 3. Invokes FizzBuzz method until there is no more RightChild node
+        /// </summary>
+        /// <param name="tree"></param>
+        /// <param name="node"></param>
         static void FizzBuzz(BinaryTree<object> tree, Node<object> node)
         {
             if (Convert.ToInt32(node.Value) % 15 == 0)
