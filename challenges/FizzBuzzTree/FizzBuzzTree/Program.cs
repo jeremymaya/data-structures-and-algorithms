@@ -11,11 +11,11 @@ namespace FizzBuzzTree
 
             tree.Root.LeftChild = new Node<object>(2);
             tree.Root.LeftChild.LeftChild = new Node<object>(4);
-            tree.Root.LeftChild.RightChild = new Node<object>(5);
+            tree.Root.LeftChild.RightChild = new Node<object>(15);
 
             tree.Root.RightChild = new Node<object>(3);
             tree.Root.RightChild.LeftChild = new Node<object>(6);
-            tree.Root.RightChild.RightChild = new Node<object>(7);
+            tree.Root.RightChild.RightChild = new Node<object>(5);
 
             Console.WriteLine(String.Join(", ", tree.BreadthFirst(tree.Root)));
 
@@ -26,7 +26,7 @@ namespace FizzBuzzTree
 
         }
 
-        static BinaryTree<object> FizzBuzz(BinaryTree<object> tree)
+        public static BinaryTree<object> FizzBuzz(BinaryTree<object> tree)
         {
             Node<object> node = tree.Root;
 
@@ -35,18 +35,25 @@ namespace FizzBuzzTree
             return tree;
         }
 
-        private static void FizzBuzz(BinaryTree<object> tree, Node<object> node)
+        static void FizzBuzz(BinaryTree<object> tree, Node<object> node)
         {
-            if (Convert.ToInt32(node.Value) % 3 == 0)
+            if (Convert.ToInt32(node.Value) % 15 == 0)
+            {
+                node.Value = "FizzBuzz";
+            }
+            else if (Convert.ToInt32(node.Value) % 3 == 0)
             {
                 node.Value = "Fizz";
+            }
+            else if (Convert.ToInt32(node.Value) % 5 == 0)
+            {
+                node.Value = "Buzz";
             }
 
             if (node.LeftChild != null)
             {
                 FizzBuzz(tree, node.LeftChild);
             }
-
             if (node.RightChild != null)
             {
                 FizzBuzz(tree, node.RightChild);
