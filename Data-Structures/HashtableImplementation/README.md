@@ -24,7 +24,10 @@ Implement a Hashtable with the following methods:
 ### Efficiency
 | | Time | Space |
 |:-- | :----------- | :----------- |
-| Lookup | O(1) | O(n) |
+| Add | O(1) | O(1) |
+| Get | O(1) | O(1) |
+| Contains | O(1) | O(1) |
+| Hash | O(n) | O(1) |
 
 ---
 
@@ -54,6 +57,7 @@ https://github.com/jeremymaya/data-structures-and-algorithms-c-/blob/master/Data
 ---
 
 ### Whiteboard Visual
+![hashtable](https://github.com/jeremymaya/data-structures-and-algorithms-c-/blob/master/assets/hashtable.jpg)
 
 ---
 
