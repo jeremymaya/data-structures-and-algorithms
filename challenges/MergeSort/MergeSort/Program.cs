@@ -18,6 +18,11 @@ namespace MergeSort
             Console.WriteLine("[ " + string.Join(", ", MergeSort(nearlySorted)) + " ]");
         }
 
+        /// <summary>
+        /// A recursive method which uses the divide-and-conquer approach sort an array
+        /// </summary>
+        /// <param name="arr">Array to be sorted</param>
+        /// <returns>Sorted Array</returns>
         public static int[] MergeSort(int[] arr)
         {
             int n = arr.Length;
@@ -48,7 +53,13 @@ namespace MergeSort
             return arr;
         }
 
-        public static void Merge(int[] left, int[] right, int[] arr)
+        /// <summary>
+        /// A method that iterates left and right half of the arrays and rearranges values
+        /// </summary>
+        /// <param name="left">Left half of the array</param>
+        /// <param name="right">Right half of the array</param>
+        /// <param name="arr">Array to be sorted</param>
+        static void Merge(int[] left, int[] right, int[] arr)
         {
             int i = 0;
             int j = 0;
