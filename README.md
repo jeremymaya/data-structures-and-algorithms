@@ -15,6 +15,7 @@
 11. [Insertion Sort](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/challenges/InsertionSort)
 12. [Merge Sort](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/challenges/MergeSort)
 13. [Quick Sort](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/challenges/QuickSort)
+14. [Hashtable](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/Data-Structures/HashtableImplementation)
 
 ---
 
