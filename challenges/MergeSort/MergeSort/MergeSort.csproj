@@ -5,7 +5,4 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\CodeChallenge27Test\CodeChallenge27Test.csproj" />
-  </ItemGroup>
 </Project>
