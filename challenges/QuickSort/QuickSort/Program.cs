@@ -17,6 +17,13 @@ namespace QuickSort
             Console.WriteLine("[ " + string.Join(", ", QuickSort(nearlySorted, 0, nearlySorted.Length - 1)) + " ]");
         }
 
+        /// <summary>
+        /// A recursive method which uses the divide-and-conquer approach sort an array
+        /// </summary>
+        /// <param name="arr">Array to be sorted</param>
+        /// <param name="left">Leftmost position of the array</param>
+        /// <param name="right">Rightmost position of the array</param>
+        /// <returns>A sorted Array</returns>
         public static int[] QuickSort(int[] arr, int left, int right)
         {
             if (left < right)
@@ -30,6 +37,15 @@ namespace QuickSort
             return arr;
         }
 
+        /// <summary>
+        /// A method that partitions the array arr so that:
+        /// Left side of pivot contains values less than the pivot
+        /// Righr side of pivot contains values greater than the pivot
+        /// </summary>
+        /// <param name="arr">Array to be partitioned</param>
+        /// <param name="left">Leftmost position of the array</param>
+        /// <param name="right">Rightmost position of the array</param>
+        /// <returns>Position of the pivot</returns>
         static int Partition(int[] arr, int left, int right)
         {
             int pivot = arr[right];
@@ -49,6 +65,12 @@ namespace QuickSort
             return low + 1;
         }
 
+        /// <summary>
+        /// A method that rearranges the partitioned array
+        /// </summary>
+        /// <param name="arr">Partitioned array</param>
+        /// <param name="i">Current index position</param>
+        /// <param name="low">Reference position for the pivot</param>
         static void Swap(int[] arr, int i, int low)
         {
             int temp = arr[i];
