@@ -1,4 +1,4 @@
-# Code Challenge 16 FizzBuzz Tree
+# Code Challenge 26 Insertion Sort
 
 ## FizzBuzz Tree
 *Author: Kyungrae Kim*
@@ -40,7 +40,7 @@ InsertionSort(int[] arr)
 ### Efficiency
 | | Time | Space |
 |:-- | :----------- | :----------- |
-| InsertionSort(int[] arr) | O(n) | O(1) |
+| InsertionSort(int[] arr) | O(n^2) | O(1) |
 
 ---
 

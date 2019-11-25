@@ -13,6 +13,7 @@
 9. [Trees](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/Data-Structures/Trees)
 10. [FizzBuzz Tree](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/challenges/FizzBuzzTree)
 11. [Insertion Sort](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/challenges/InsertionSort)
+12. [Merge Sort](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/challenges/MergeSort)
 
 ---
 
