@@ -17,6 +17,7 @@
 13. [Quick Sort](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/challenges/QuickSort)
 14. [Hashtable](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/Data-Structures/HashtableImplementation)
 15. [Repeated Word](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/challenges/RepeatedWord)
+16. [Tree Intersertion](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/challenges/TreeIntersertion)
 
 ---
 
