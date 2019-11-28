@@ -14,19 +14,12 @@ Implement a Hashtable with the following methods:
 
 ---
 
-### Inputs and Expected Outputs
-| Input | Expected Output |
-| :----------- |:----------- |
-| 1234 | Hashed Value |
-
----
-
 ### Efficiency
 | | Time | Space |
 |:-- | :----------- | :----------- |
-| Add | O(1) | O(1) |
-| Get | O(1) | O(1) |
-| Contains | O(1) | O(1) |
+| Add | O(n) | O(1) |
+| Get | O(n) | O(1) |
+| Contains | O(n) | O(1) |
 | Hash | O(n) | O(1) |
 
 ---
@@ -34,19 +27,77 @@ Implement a Hashtable with the following methods:
 ### Solution
 #### Add
 ```C#
+public void Add(string key, string value)
+{
+    int index = Hash(key);
+    Node newNode = new Node(key, value);
 
+    if (Table[index] == null)
+    {
+        Table[index] = newNode;
+    }
+    else
+    {
+        Node current = Table[index];
+        while (current.Next != null)
+        {
+            current = current.Next;
+        }
+        current.Next = new Node(key, value);
+    }
+}
 ````
 #### Get
 ```C#
+public Node Get(string key)
+{
+    int index = Hash(key);
+    Node current = Table[index];
 
+    while (current != null)
+    {
+        if (current.Key == key)
+        {
+            return current;
+        }
+        current = current.Next;
+    }
+
+    return null;
+}
 ```
 #### Contains
 ```C#
+public bool Contains(string key)
+{
+    int index = Hash(key);
+    Node current = Table[index];
 
+    while (current != null)
+    {
+        if (current.Key == key)
+        {
+            return true;
+        }
+        current = current.Next;
+    }
+
+    return false;
+}
 ```
 #### Hash
 ```C#
+public int Hash(string key)
+{
+    int hash = 0;
 
+    foreach (int character in key)
+    {
+        hash += character;
+    }
+
+    return hash * 599 % 1014;
+}
 ```
 
 ---
@@ -62,4 +113,5 @@ https://github.com/jeremymaya/data-structures-and-algorithms-c-/blob/master/Data
 ---
 
 ### Change Log
-1.0: *Code Challenge 28 started, Initial Submission* - 25 Nov 2019
+1.0: *Code Challenge 30 Completed, Second Submission* - 28 Nov 2019
+1.0: *Code Challenge 30 started, Initial Submission* - 25 Nov 2019
