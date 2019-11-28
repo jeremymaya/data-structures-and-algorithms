@@ -11,6 +11,11 @@ namespace HashtableImplementation.Classes
             Table = new Node[tableSize];
         }
 
+        /// <summary>
+        /// Stores the value parameter at the hashed index in the hashtable
+        /// </summary>
+        /// <param name="key">Key</param>
+        /// <param name="value">Value</param>
         public void Add(string key, string value)
         {
             int index = Hash(key);
@@ -31,6 +36,11 @@ namespace HashtableImplementation.Classes
             }
         }
 
+        /// <summary>
+        /// Retrieves a node with the matching key
+        /// </summary>
+        /// <param name="key">Key</param>
+        /// <returns>Node with the matching key and the associated value</returns>
         public Node Get(string key)
         {
             int index = Hash(key);
@@ -48,6 +58,11 @@ namespace HashtableImplementation.Classes
             return null;
         }
 
+        /// <summary>
+        /// Checks if the hashtable contains a node with the matching key
+        /// </summary>
+        /// <param name="key">Key</param>
+        /// <returns>True if there is a node with the matching key and False if there is no node matching the key</returns>
         public bool Contains(string key)
         {
             int index = Hash(key);
@@ -65,6 +80,11 @@ namespace HashtableImplementation.Classes
             return false;
         }
 
+        /// <summary>
+        /// Turns a key into an integer
+        /// </summary>
+        /// <param name="key">Key</param>
+        /// <returns>Hash code</returns>
         public int Hash(string key)
         {
             int hash = 0;
