@@ -14,7 +14,6 @@ namespace HashtableImplementation.Classes
         public void Add(string key, string value)
         {
             int index = Hash(key);
-
             Node newNode = new Node(key, value);
 
             if (Table[index] == null)
@@ -32,25 +31,28 @@ namespace HashtableImplementation.Classes
             }
         }
 
-        public string Get(string key)
+        public Node Get(string key)
         {
             int index = Hash(key);
             Node current = Table[index];
+
             while (current != null)
             {
                 if (current.Key == key)
                 {
-                    return current.Value;
+                    return current;
                 }
                 current = current.Next;
             }
-            return "No Value Available";
+
+            return null;
         }
 
         public bool Contains(string key)
         {
             int index = Hash(key);
             Node current = Table[index];
+
             while (current != null)
             {
                 if (current.Key == key)
@@ -59,10 +61,11 @@ namespace HashtableImplementation.Classes
                 }
                 current = current.Next;
             }
+
             return false;
         }
 
-        private int Hash(string key)
+        public int Hash(string key)
         {
             int hash = 0;
 
@@ -71,9 +74,7 @@ namespace HashtableImplementation.Classes
                 hash += character;
             }
 
-            hash = hash * 599 % 1014;
-
-            return hash;
+            return hash * 599 % 1014;
         }
     }
 }

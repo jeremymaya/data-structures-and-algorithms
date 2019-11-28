@@ -7,7 +7,6 @@ namespace HashtableImplementation
     {
         static void Main(string[] args)
         {
-
         }
     }
 }
