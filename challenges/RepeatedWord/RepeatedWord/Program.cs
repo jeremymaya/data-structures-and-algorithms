@@ -18,6 +18,11 @@ namespace RepeatedWord
             Console.WriteLine(RepeatedWord(exampleThree));
         }
 
+        /// <summary>
+        /// This method utilizes a custom hashtable to check for the first word to occur more than once in a phrase
+        /// </summary>
+        /// <param name="phrase">Lengthy String</param>
+        /// <returns>The first word to occur more than once in phrase parameter or "No Repeated Word"</returns>
         public static string RepeatedWord(string phrase)
         {
             string[] words = phrase.Split(' ');
@@ -26,6 +31,7 @@ namespace RepeatedWord
 
             for (int i = 0; i < words.Length; i++)
             {
+                // Source: https://www.geeksforgeeks.org/removing-punctuations-given-string/
                 string word = Regex.Replace(words[i].ToLower(), @"[^\w\d\s]", "");
 
                 if (hashtable.Contains(word))
