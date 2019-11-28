@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HashtableImplementation.Classes;
+using System;
 
 namespace HashtableImplementation
 {
@@ -6,7 +7,6 @@ namespace HashtableImplementation
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
         }
     }
 }
