@@ -28,7 +28,27 @@ Find the first repeated word in a book by writing a function that accepts a leng
 
 ### Solution
 ```C#
+public static string RepeatedWord(string phrase)
+{
+    string[] words = phrase.Split(' ');
 
+    Hashtable hashtable = new Hashtable();
+
+    for (int i = 0; i < words.Length; i++)
+    {
+        // Source: https://www.geeksforgeeks.org/removing-punctuations-given-string/
+        string word = Regex.Replace(words[i].ToLower(), @"[^\w\d\s]", "");
+
+        if (hashtable.Contains(word))
+        {
+            return hashtable.Get(word).Value;
+        }
+
+        hashtable.Add(word, word);
+    }
+
+    return "No Repeated Word";
+}
 ````
 
 ---
@@ -42,6 +62,9 @@ https://github.com/jeremymaya/data-structures-and-algorithms-c-/blob/master/chal
 ![repeated-word](https://github.com/jeremymaya/data-structures-and-algorithms-c-/blob/master/assets/repeated-word.jpg)
 
 ---
+
+### Credit
+[GeeksforGeeks](https://www.geeksforgeeks.org/removing-punctuations-given-string/)
 
 ### Change Log
 1.0: *Code Challenge 31 started, Initial Submission* - 28 Nov 2019
