@@ -53,6 +53,12 @@ namespace TreeIntersection
             Console.WriteLine($"[{string.Join(",", exampleTwo)}]");
         }
 
+        /// <summary>
+        /// A method that calls a recusrive method to iterate through the two trees and compares values to return the matching values only
+        /// </summary>
+        /// <param name="treeOne"></param>
+        /// <param name="treeTwo"></param>
+        /// <returns></returns>
         public static List<int> TreeIntersection(BinaryTree<int> treeOne, BinaryTree<int> treeTwo)
         {
             List<int> listOne = new List<int>();
@@ -60,8 +66,8 @@ namespace TreeIntersection
             List<int> listTwo = new List<int>();
             TreeIntersection(treeTwo.Root, listTwo);
 
-            int outer = 0;
-            int inner = 0;
+            int outer;
+            int inner;
 
             if (listOne.Count > listTwo.Count)
             {
@@ -90,6 +96,11 @@ namespace TreeIntersection
             return listThree ;
         }
 
+        /// <summary>
+        /// Resursive method that iterates through a tree in PreOrder
+        /// </summary>
+        /// <param name="node">Root node</param>
+        /// <param name="list">List to hold the node value</param>
         static void TreeIntersection(Node<int> node, List<int> list)
         {
             list.Add(node.Value);
