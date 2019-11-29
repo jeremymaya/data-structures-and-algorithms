@@ -32,30 +32,74 @@ namespace TreeIntersection
             exampleOneTreeTwo.Root.RightChild.RightChild.LeftChild = new Node<int>(4);
             exampleOneTreeTwo.Root.RightChild.RightChild.RightChild = new Node<int>(500);
 
+            BinaryTree<int> exampleTwoTreeOne = new BinaryTree<int>(150);
+            exampleTwoTreeOne.Root.LeftChild = new Node<int>(100);
+            exampleTwoTreeOne.Root.LeftChild.LeftChild = new Node<int>(160);
+            exampleTwoTreeOne.Root.LeftChild.RightChild = new Node<int>(75);
+            exampleTwoTreeOne.Root.RightChild = new Node<int>(250);
+            exampleTwoTreeOne.Root.RightChild.LeftChild = new Node<int>(350);
+
+            BinaryTree<int> exampleTwoTreeTwo = new BinaryTree<int>(42);
+            exampleTwoTreeTwo.Root.LeftChild = new Node<int>(75);
+            exampleTwoTreeTwo.Root.LeftChild.LeftChild = new Node<int>(250);
+            exampleTwoTreeTwo.Root.LeftChild.RightChild= new Node<int>(350);
+            exampleTwoTreeTwo.Root.RightChild = new Node<int>(100);
+            exampleTwoTreeTwo.Root.RightChild.RightChild = new Node<int>(150);
+
             List<int> exampleOne = TreeIntersection(eaxampleOneTreeOne, exampleOneTreeTwo);
             Console.WriteLine($"[{string.Join(",", exampleOne)}]");
+
+            List<int> exampleTwo = TreeIntersection(exampleTwoTreeOne, exampleTwoTreeTwo);
+            Console.WriteLine($"[{string.Join(",", exampleTwo)}]");
         }
 
         public static List<int> TreeIntersection(BinaryTree<int> treeOne, BinaryTree<int> treeTwo)
         {
-            List<int> list = new List<int>();
-            TreeIntersection(treeOne.Root, treeTwo.Root, list);
-            return list;
+            List<int> listOne = new List<int>();
+            TreeIntersection(treeOne.Root, listOne);
+            List<int> listTwo = new List<int>();
+            TreeIntersection(treeTwo.Root, listTwo);
+
+            int outer = 0;
+            int inner = 0;
+
+            if (listOne.Count > listTwo.Count)
+            {
+                outer = listOne.Count;
+                inner = listTwo.Count;
+            }
+            else
+            {
+                outer = listTwo.Count;
+                inner = listOne.Count;
+            }
+
+
+            List<int> listThree = new List<int>();
+            for (int i = 0; i < outer; i++)
+            {
+                for (int j = 0; j < inner; j++)
+                {
+                    if (listOne[i] == listTwo[j])
+                    {
+                        listThree.Add(listOne[i]);
+                    }
+                }
+            }
+
+            return listThree ;
         }
 
-        static void TreeIntersection(Node<int> nodeOne, Node<int> nodeTwo, List<int> list)
+        static void TreeIntersection(Node<int> node, List<int> list)
         {
-            if (nodeOne.Value == nodeTwo.Value)
+            list.Add(node.Value);
+            if (node.LeftChild != null)
             {
-                list.Add(nodeTwo.Value);
+                TreeIntersection(node.LeftChild, list);
             }
-            if (nodeOne.LeftChild != null || nodeTwo.LeftChild != null)
+            if (node.RightChild != null)
             {
-                TreeIntersection(nodeOne.LeftChild, nodeTwo.LeftChild, list);
-            }
-            if (nodeOne.RightChild != null || nodeTwo.RightChild != null)
-            {
-                TreeIntersection(nodeOne.RightChild, nodeTwo.RightChild, list);
+                TreeIntersection(node.RightChild, list);
             }
         }
     }
