@@ -1,5 +1,6 @@
 using System;
 using Xunit;
+using static GraphImplementation.Program;
 
 namespace CodeChallenge35Test
 {

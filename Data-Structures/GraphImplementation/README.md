@@ -1,6 +1,6 @@
-# Code Challenge 35 Graph
+# Code Challenge 35, 36 Graph & Breadth First Traversal
 
-## Graph
+## Graph & Breadth First Traversal
 *Author: Kyungrae Kim*
 
 ---
@@ -24,6 +24,9 @@ Implement a Graph with the following methods:
     * Include the weight of the connection in the returned collection
 5. Size
     * Returns the total number of nodes in the graph
+6. BreadthFirst
+    * Extend your graph object with a breadth-first traversal method that accepts a starting node.
+    * Return a collection of nodes in the order they were visited. Display the collection
 
 ---
 
@@ -35,6 +38,7 @@ Implement a Graph with the following methods:
 | GetNodes |  |  |
 | GetNeighbors |  |  |
 | Size |  |  |
+| BreadthFirst |  |  |
 
 ---
 
@@ -56,6 +60,10 @@ Implement a Graph with the following methods:
 
 ````
 #### Size
+```C#
+
+````
+#### BreadthFirst
 ```C#
 
 ````

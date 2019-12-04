@@ -18,7 +18,7 @@
 14. [Hashtable](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/Data-Structures/HashtableImplementation)
 15. [Repeated Word](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/challenges/RepeatedWord)
 16. [Tree Intersection](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/challenges/TreeIntersection)
-16. [Graph](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/Data-Structures/GraphImplementation)
+17. [Graph](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/Data-Structures/GraphImplementation)
 
 ---
 
