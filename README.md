@@ -20,6 +20,7 @@
 16. [Tree Intersection](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/challenges/TreeIntersection)
 17. [Graph](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/Data-Structures/GraphImplementation)
 18. [Get Edges](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/challenges/GetEdges)
+19. [Depth First](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/challenges/DepthFirst)
 
 ---
 
