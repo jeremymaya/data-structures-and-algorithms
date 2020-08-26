@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertionSort", "InsertionSort\InsertionSort.csproj", "{14C66D9A-182B-489D-AB44-CD2F91B09A20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeChallenge26Test", "CodeChallenge26Test\CodeChallenge26Test.csproj", "{FBB5DFD9-CA1A-44E5-8E59-20D5705E6E28}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14C66D9A-182B-489D-AB44-CD2F91B09A20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14C66D9A-182B-489D-AB44-CD2F91B09A20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14C66D9A-182B-489D-AB44-CD2F91B09A20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14C66D9A-182B-489D-AB44-CD2F91B09A20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBB5DFD9-CA1A-44E5-8E59-20D5705E6E28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBB5DFD9-CA1A-44E5-8E59-20D5705E6E28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBB5DFD9-CA1A-44E5-8E59-20D5705E6E28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBB5DFD9-CA1A-44E5-8E59-20D5705E6E28}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
