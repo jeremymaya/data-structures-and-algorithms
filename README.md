@@ -1,32 +1,42 @@
 # Data Structures and Algorithms C\#
+
+Author: Kyungrae Kim
+
 ---
 
 ## Table of Contents
-1. [Array Shift](https://github.com/jeremymaya/data-structures-and-algorithms-c-/tree/master/challenges/ArrayShift)
-2. [Array Binary Search](https://github.com/jeremymaya/data-structures-and-algorithms-c-/tree/master/challenges/SearchBinary)
-3. [Linked List](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/Data-Structures/LinkedList)
-4. [Linked List Merge](https://github.com/jeremymaya/data-structures-and-algorithms-c-/tree/master/challenges/LLMerge)
-5. [Queue With Stacks](https://github.com/jeremymaya/data-structures-and-algorithms-c-/tree/master/challenges/QueueWithStacks)
-6. [FIFO Animal Shelter](https://github.com/jeremymaya/data-structures-and-algorithms-c-/tree/master/challenges/FIFOAnimalShelter)
-7. [Multi Bracket Validation](https://github.com/jeremymaya/data-structures-and-algorithms-c-/tree/master/challenges/MultiBracketValidation)
-8. [Stacks And Queues](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/Data-Structures/StacksAndQueues)
-9. [Trees](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/Data-Structures/Trees)
-10. [FizzBuzz Tree](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/challenges/FizzBuzzTree)
-11. [Insertion Sort](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/challenges/InsertionSort)
-12. [Merge Sort](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/challenges/MergeSort)
-13. [Quick Sort](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/challenges/QuickSort)
-14. [Hashtable](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/Data-Structures/HashtableImplementation)
-15. [Repeated Word](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/challenges/RepeatedWord)
-16. [Tree Intersection](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/challenges/TreeIntersection)
-17. [Graph](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/Data-Structures/GraphImplementation)
-18. [Get Edges](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/challenges/GetEdges)
-19. [Depth First](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/challenges/DepthFirst)
 
----
+### Data Structures
 
-*Author: Kyungrae Kim*
+* [Linked List](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/Data-Structures/LinkedList)
+* [Queue With Stacks](https://github.com/jeremymaya/data-structures-and-algorithms-c-/tree/master/challenges/QueueWithStacks)
+* [Stacks And Queues](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/Data-Structures/StacksAndQueues)
+* [Trees](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/Data-Structures/Trees)
+* [Hashtable](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/Data-Structures/HashtableImplementation)
+* [Graph](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/Data-Structures/GraphImplementation)
+
+### Algorithms
+
+* [Insertion Sort](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/challenges/InsertionSort)
+* [Merge Sort](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/challenges/MergeSort)
+* [Quick Sort](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/challenges/QuickSort)
+
+### Challenges
+
+* [Array Shift](https://github.com/jeremymaya/data-structures-and-algorithms-c-/tree/master/challenges/ArrayShift)
+* [Array Binary Search](https://github.com/jeremymaya/data-structures-and-algorithms-c-/tree/master/challenges/SearchBinary)
+* [Linked List Merge](https://github.com/jeremymaya/data-structures-and-algorithms-c-/tree/master/challenges/LLMerge)
+* [FIFO Animal Shelter](https://github.com/jeremymaya/data-structures-and-algorithms-c-/tree/master/challenges/FIFOAnimalShelter)
+* [Multi Bracket Validation](https://github.com/jeremymaya/data-structures-and-algorithms-c-/tree/master/challenges/MultiBracketValidation)
+* [FizzBuzz Tree](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/challenges/FizzBuzzTree)
+* [Repeated Word](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/challenges/RepeatedWord)
+* [Tree Intersection](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/challenges/TreeIntersection)
+* [Get Edges](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/challenges/GetEdges)
+* [Depth First](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/challenges/DepthFirst)
 
 ---
 
 ## Change Log
-1.0: *Data Structures and Algorithms repository set up* - 15 Oct 2019
+
+1.1: *Data Structures and Algorithms repository cleanup* - 25 August 2019
+1.0: *Data Structures and Algorithms repository set up* - 15 October 2019

@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepeatedWord", "RepeatedWord\RepeatedWord.csproj", "{F669D218-619B-4F0F-9C06-369217CDFD78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeChallenge31Test", "CodeChallenge31Test\CodeChallenge31Test.csproj", "{B375D17C-3A08-418B-BA0D-E6A627677E65}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F669D218-619B-4F0F-9C06-369217CDFD78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F669D218-619B-4F0F-9C06-369217CDFD78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F669D218-619B-4F0F-9C06-369217CDFD78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F669D218-619B-4F0F-9C06-369217CDFD78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B375D17C-3A08-418B-BA0D-E6A627677E65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B375D17C-3A08-418B-BA0D-E6A627677E65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B375D17C-3A08-418B-BA0D-E6A627677E65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B375D17C-3A08-418B-BA0D-E6A627677E65}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
