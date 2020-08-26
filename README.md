@@ -38,5 +38,5 @@ Author: Kyungrae Kim
 
 ## Change Log
 
-1.1: *Data Structures and Algorithms repository cleanup* - 25 August 2019
-1.0: *Data Structures and Algorithms repository set up* - 15 October 2019
+* 1.1: *Data Structures and Algorithms repository cleanup* - 25 August 2019
+* 1.0: *Data Structures and Algorithms repository set up* - 15 October 2019
