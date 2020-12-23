@@ -8,35 +8,55 @@ Author: Kyungrae Kim
 
 ### Data Structures
 
-* [Linked List](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/Data-Structures/LinkedList)
-* [Queue With Stacks](https://github.com/jeremymaya/data-structures-and-algorithms-c-/tree/master/challenges/QueueWithStacks)
-* [Stacks And Queues](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/Data-Structures/StacksAndQueues)
-* [Trees](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/Data-Structures/Trees)
-* [Hashtable](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/Data-Structures/HashtableImplementation)
-* [Graph](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/Data-Structures/GraphImplementation)
+* [Linked List](data-structures/LinkedList/README.md)
+* [Stacks And Queues](data-structures/StacksAndQueues/README.md)
+* [Hash Table](data-structures/HashtableImplementation/README.md)
+* [Tree](data-structures/Trees/README.md)
+* [Graph](data-structures/GraphImplementation/README.md)
 
-### Algorithms
+### Searching
 
-* [Insertion Sort](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/challenges/InsertionSort)
-* [Merge Sort](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/challenges/MergeSort)
-* [Quick Sort](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/challenges/QuickSort)
+* [Binary Search](challenges/SearchBinary/README.md))
+* Breadth-First Search - INCOMPLETE
+* [Depth First](searching/DepthFirst/README.md))
+
+### Sorting
+
+* Bubble Sort - INCOMPLETE
+* [Insertion Sort](sort/InsertionSort/README.md)
+* Selection Sort - INCOMPLETE
+* [Merge Sort](sort/MergeSort/README.md)
+* Shell Sort - INCOMPLETE
+* [Quick Sort](sort/QuickSort/README.md)
 
 ### Challenges
 
-* [Array Shift](https://github.com/jeremymaya/data-structures-and-algorithms-c-/tree/master/challenges/ArrayShift)
-* [Array Binary Search](https://github.com/jeremymaya/data-structures-and-algorithms-c-/tree/master/challenges/SearchBinary)
-* [Linked List Merge](https://github.com/jeremymaya/data-structures-and-algorithms-c-/tree/master/challenges/LLMerge)
-* [FIFO Animal Shelter](https://github.com/jeremymaya/data-structures-and-algorithms-c-/tree/master/challenges/FIFOAnimalShelter)
-* [Multi Bracket Validation](https://github.com/jeremymaya/data-structures-and-algorithms-c-/tree/master/challenges/MultiBracketValidation)
-* [FizzBuzz Tree](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/challenges/FizzBuzzTree)
-* [Repeated Word](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/challenges/RepeatedWord)
-* [Tree Intersection](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/challenges/TreeIntersection)
-* [Get Edges](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/challenges/GetEdges)
-* [Depth First](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/tree/master/challenges/DepthFirst)
+* [Array Shift](challenges/ArrayShift/README.md))
+* [Linked List Merge](challenges/LLMerge/README.md))
+* [FIFO Animal Shelter](challenges/FIFOAnimalShelter/README.md))
+* [Multi Bracket Validation](challenges/MultiBracketValidation/README.md))
+* [FizzBuzz Tree](challenges/FizzBuzzTree/README.md))
+* [Repeated Word](challenges/RepeatedWord/README.md))
+* [Tree Intersection](challenges/TreeIntersection/README.md))
+* [Get Edges](challenges/GetEdges/README.md))
+
+---
+
+## About
+
+Hello, this tis a repository for Data Structures and Algorithms practice and notes 😁
+
+---
+
+## References
+
+* [tutorialpoint - Learn Data Structure](https://www.tutorialspoint.com/data_structures_algorithms/index.htm)
+* [Interview Cake](https://www.interviewcake.com/)
 
 ---
 
 ## Change Log
 
+* 2.0: *Data Structures and Algorithms repository redo* - 22 December 2020
 * 1.1: *Data Structures and Algorithms repository cleanup* - 25 August 2019
 * 1.0: *Data Structures and Algorithms repository set up* - 15 October 2019
