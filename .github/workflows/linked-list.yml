@@ -15,8 +15,8 @@ jobs:
       with:
         dotnet-version: 3.1.301
     - name: Install dependencies
-      run: dotnet restore ./LinkedList/LinkedList.sln
+      run: dotnet restore ./data-structures/LinkedList/LinkedList.sln
     - name: Build
-      run: dotnet build ./LinkedList/LinkedList.sln --configuration Release
+      run: dotnet build ./data-structures/LinkedList/LinkedList.sln --configuration Release
     - name: Test
-      run: dotnet test ./LinkedList/LinkedList.sln --configuration Release
+      run: dotnet test ./data-structures/LinkedList/LinkedList.sln --configuration Release
