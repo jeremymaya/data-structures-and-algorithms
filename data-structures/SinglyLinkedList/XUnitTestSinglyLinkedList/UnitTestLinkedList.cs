@@ -156,7 +156,7 @@ namespace XUnitTestSinglyLinkedList
         }
         #endregion
 
-        #region InsertAtIndex
+        #region InsertAtIndex()
         [Theory]
         [InlineData(new int[] { }, 0, 5)]
         [InlineData(new int[] { 1, 3, 2 }, 0, 5)]
@@ -176,8 +176,9 @@ namespace XUnitTestSinglyLinkedList
         }
         #endregion
 
+        #region DeleteAtIndex()
         [Theory]
-        // [InlineData(new int[] { 1, 3, 2 }, 0, "HEAD -> 3 -> 2 -> NULL")]
+        //[InlineData(new int[] { 1, 3, 2 }, 0, "HEAD -> 3 -> 2 -> NULL")]
         [InlineData(new int[] { 1, 3, 2 }, 1, "HEAD -> 1 -> 2 -> NULL")]
         [InlineData(new int[] { 1, 3, 2 }, 2, "HEAD -> 1 -> 3 -> NULL")]
         public void CanDeleteAtIndex(int[] nums, int index, string expected)
@@ -191,6 +192,7 @@ namespace XUnitTestSinglyLinkedList
 
             Assert.Equal(expected, list.ToString());
         }
+        #endregion
 
         #region ToString()
         [Theory]

@@ -43,26 +43,105 @@ A Linked List is a linear data structure made of a sequence of `Nodes` that are 
 
 ## Implementation
 
+### Prepend
+
+```c#
+public void Prepend(T value)
+{
+    Node<T> current = new Node<T>(value)
+    {
+        Next = Head
+    };
+
+    Head = current;
+}
+```
+
+### Append
+
+```c#
+public void Append(T value)
+{
+    if (Head == null)
+    {
+        Prepend(value);
+        return;
+    }
+
+    Node<T> previous = TraverseToEnd();
+    Node<T> current = new Node<T>(value);
+
+    previous.Next = current;
+}
+```
 ### Lookup
 
 ```c#
+public bool Lookup(T value)
+{
+    Node<T> current = Head;
+
+    while (current != null)
+    {
+        if (current.Value.Equals(value))
+            return true;
+
+        current = current.Next;
+    }
+
+    return false;
+}
 ```
 
 ### Insert
 
 ```c#
+public void InsertAtIndex(int index, T value)
+{
+    if (index == 0)
+    {
+        Prepend(value);
+        return;
+    }
+
+    Node<T> previous = GetNodeFromIndex(index - 1);
+
+    if (previous == null)
+        return;
+
+    Node<T> current = new Node<T>(value);
+    Node<T> next = previous.Next;
+
+    current.Next = next;
+    previous.Next = current;
+}
 ```
 
 ### Delete
 
 ```c#
+public void DeleteAtIndex(int index)
+{
+    Node<T> current = GetNodeFromIndex(index);
+
+    if (current == null)
+        return;
+
+    Node<T> previous = GetNodeFromIndex(index - 1);
+    Node<T> next = current.Next;
+
+    if (previous != null)
+        previous.Next = next;
+    else
+        Head = next;
+}
 ```
 
 ---
 
 ## Link to Code
 
-[LinkedList Library](/#)
+[LinkedList Library](SinglyLinkedList/LinkedList.cs)
 
 ---
 
@@ -76,5 +155,7 @@ A Linked List is a linear data structure made of a sequence of `Nodes` that are 
 
 ---
 
-### Change Log
-1.0: *Code Challenge 06 Completed, Initial submission* - 22 Oct 2019  
+## Change Log
+
+* 2.0 *Singly Linked List impelemented* - 23 December 2020
+* 1.0: *Code Challenge 06 Completed, Initial submission* - 22 October 2019  
