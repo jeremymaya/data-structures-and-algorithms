@@ -1,5 +1,7 @@
 # Singly Linked List
 
+![build](https://github.com/jeremymaya/data-structures-and-algorithms-c-sharp/workflows/build/badge.svg)
+
 Author: Kyungrae Kim
 
 ---
