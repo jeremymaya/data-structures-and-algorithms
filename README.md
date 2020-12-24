@@ -8,7 +8,7 @@ Author: Kyungrae Kim
 
 ### Data Structures
 
-* [Linked List](data-structures/LinkedList/README.md)
+* [Linked List](data-structures/SinglyLinkedList/README.md)
 * [Stacks And Queues](data-structures/StacksAndQueues/README.md)
 * [Hash Table](data-structures/HashtableImplementation/README.md)
 * [Tree](data-structures/Trees/README.md)
