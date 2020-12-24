@@ -10,7 +10,7 @@ Author: Kyungrae Kim
 
 ### What is Linked List?
 
-A Linked List is a linear data structure made of a sequence of `Nodes` that are linked to each other. Each `Node` are linked together by the reference field.
+Linked List is a linear data structure made of a sequence of `Nodes` that are linked to each other. Each `Node` are linked together by the reference field.
 
 ```text
 +-------+---+   +-------+---+   +-------+---+
@@ -76,6 +76,7 @@ public void Append(T value)
     previous.Next = current;
 }
 ```
+
 ### Lookup
 
 ```c#
@@ -159,5 +160,5 @@ public void DeleteAtIndex(int index)
 
 ## Change Log
 
-* 2.0 *Singly Linked List impelemented* - 23 December 2020
+* 2.0: *Singly Linked List implemented* - 23 December 2020
 * 1.0: *Code Challenge 06 Completed, Initial submission* - 22 October 2019  
