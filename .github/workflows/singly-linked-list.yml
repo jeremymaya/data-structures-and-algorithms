@@ -15,8 +15,8 @@ jobs:
       with:
         dotnet-version: 3.1.301
     - name: Install dependencies
-      run: dotnet restore ./data-structures/LinkedList/LinkedList.sln
+      run: dotnet restore ./data-structures/SinglyLinkedList/SinglyLinkedList.sln
     - name: Build
-      run: dotnet build ./data-structures/LinkedList/LinkedList.sln --configuration Release
+      run: dotnet build ./data-structures/SinglyLinkedList/SinglyLinkedList.sln --configuration Release
     - name: Test
-      run: dotnet test ./data-structures/LinkedList/LinkedList.sln --configuration Release
+      run: dotnet test ./data-structures/SinglyLinkedList/SinglyLinkedList.sln --configuration Release
