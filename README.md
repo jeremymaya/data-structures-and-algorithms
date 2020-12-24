@@ -9,16 +9,16 @@ Author: Kyungrae Kim
 ### Data Structures
 
 * [Linked List](data-structures/SinglyLinkedList/README.md)
-* [Stacks And Queues](data-structures/StacksAndQueues/README.md)
+* [Stacks And Queues](data-structures/StackAndQueue/README.md)
 * [Hash Table](data-structures/HashtableImplementation/README.md)
 * [Tree](data-structures/Trees/README.md)
 * [Graph](data-structures/GraphImplementation/README.md)
 
 ### Searching
 
-* [Binary Search](challenges/SearchBinary/README.md))
+* [Binary Search](challenges/SearchBinary/README.md)
 * Breadth-First Search - INCOMPLETE
-* [Depth First](searching/DepthFirst/README.md))
+* [Depth First](searching/DepthFirst/README.md)
 
 ### Sorting
 
@@ -31,14 +31,14 @@ Author: Kyungrae Kim
 
 ### Challenges
 
-* [Array Shift](challenges/ArrayShift/README.md))
-* [Linked List Merge](challenges/LLMerge/README.md))
-* [FIFO Animal Shelter](challenges/FIFOAnimalShelter/README.md))
-* [Multi Bracket Validation](challenges/MultiBracketValidation/README.md))
-* [FizzBuzz Tree](challenges/FizzBuzzTree/README.md))
-* [Repeated Word](challenges/RepeatedWord/README.md))
-* [Tree Intersection](challenges/TreeIntersection/README.md))
-* [Get Edges](challenges/GetEdges/README.md))
+* [Array Shift](challenges/ArrayShift/README.md)
+* [Linked List Merge](challenges/LLMerge/README.md)
+* [FIFO Animal Shelter](challenges/FIFOAnimalShelter/README.md)
+* [Multi Bracket Validation](challenges/MultiBracketValidation/README.md)
+* [FizzBuzz Tree](challenges/FizzBuzzTree/README.md)
+* [Repeated Word](challenges/RepeatedWord/README.md)
+* [Tree Intersection](challenges/TreeIntersection/README.md)
+* [Get Edges](challenges/GetEdges/README.md)
 
 ---
 

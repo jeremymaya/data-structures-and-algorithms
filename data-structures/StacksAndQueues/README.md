@@ -8,9 +8,9 @@ Author: Kyungrae Kim
 
 ### What is Stack?
 
-Stack is a linear data structure which adds or removes data in Last In First Out (LIFO) manner. It is also an abstract data structure which is defined by a set of behaviors and not how the behavior is implemented.
+Stack is a linear data structure which adds or removes data in Last In First Out (LIFO) manner. It is also an abstract data structure (ADT) which is defined by a set of behaviors and not how the behavior is implemented.
 
-Stack can be implemented using a Linked List or a Dynamic Array.
+Since stack is an ADT, it can be implemented by using Array, Structure, Pointer, and Linked List.
 
 ```text
      +---+          +---+
@@ -46,16 +46,46 @@ push | 5 |- .    . >| 4 | pop
 ### Push
 
 ```c#
+public void Push(T value)
+{
+    Top = value;
+
+    _stack.Add(value);
+}
 ```
 
 ### Pop
 
 ```c#
+
+public T Pop()
+{
+    int count = _stack.Count;
+
+    if (count == 0)
+        return default;
+
+    Top = count == 1 ? default : _stack[count - 1];
+
+    T pop = _stack[count - 1];
+    _stack.Remove(pop);
+
+    return pop;
+}
 ```
 
 ### Peek
 
 ```c#
+public T Peek()
+{
+    int count = _stack.Count;
+
+    if (count == 0)
+        return default;
+
+    return _stack[count - 1];
+}
 ```
 
 ---
