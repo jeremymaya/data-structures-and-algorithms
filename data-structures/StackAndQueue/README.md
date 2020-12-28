@@ -8,7 +8,7 @@ Author: Kyungrae Kim
 
 ### What is Stack?
 
-Stack is a linear data structure which adds or removes data in Last In First Out (LIFO) manner. It is also an abstract data structure (ADT) which is defined by a set of behaviors and not how the behavior is implemented.
+**Stack** is a linear data structure which adds or removes data in **Last In First Out (LIFO)** manner. It is also an abstract data structure (ADT) which is defined by a set of behaviors and not how the behavior is implemented.
 
 Since stack is an ADT, it can be implemented by using Array, Structure, Pointer, and Linked List.
 
@@ -26,11 +26,11 @@ push | 5 |- .    . >| 4 | pop
          +-----------+
 ```
 
-### Strength
+### Strength - Stack
 
 * Fast operations
 
-### Big O
+### Big O - Stack
 
 || Worst Case |
 |:-|:-:|
@@ -41,7 +41,9 @@ push | 5 |- .    . >| 4 | pop
 
 ---
 
-## Implementation
+## Implementation - Stack
+
+Below implementation uses a dynamic array.
 
 ### Push
 
@@ -57,12 +59,11 @@ public void Push(T value)
 ### Pop
 
 ```c#
-
 public T Pop()
 {
     int count = _stack.Count;
 
-    if (count == 0)
+    if (IsEmpty())
         return default;
 
     Top = count == 1 ? default : _stack[count - 1];
@@ -74,17 +75,121 @@ public T Pop()
 }
 ```
 
-### Peek
+### Peek - Stack
 
 ```c#
 public T Peek()
 {
     int count = _stack.Count;
 
-    if (count == 0)
+    if (IsEmpty())
         return default;
 
     return _stack[count - 1];
+}
+```
+
+### IsEmpty - Stack
+
+```c#
+public bool IsEmpty()
+{
+    if (_stack.Count == 0)
+        return true;
+
+    return false;
+}
+```
+
+---
+
+## Queue
+
+### What is Queue?
+
+**Queue** is a linear data structure which adds or removes data in **First In First Out (FIFO)** manner. It is also an abstract data structure (ADT) which is defined by a set of behaviors and not how the behavior is implemented.
+
+Since queue is also an ADT, it can be implemented by using Array, Structure, Pointer, and Linked List.
+
+```text
+Enqueue                     Dequeue
+ +---+     +---+---+---+     +---+
+ |   |     |   |   |   |     |   |
+ | 5 |---> | 4 | 3 | 2 |---> | 1 |
+ |   |     |   |   |   |     |   |
+ +---+     +---+---+---+     +---+
+```
+
+### Strength - Queue
+
+* Fast operations
+
+### Big O - Queue
+
+|| Worst Case |
+|:-|:-:|
+| Space | O(n) |
+| Enqueue | O(1) |
+| Dequeue | O(1) |
+| Peek | O(1) |
+
+---
+
+## Implementation - Queue
+
+Below implementation uses a dynamic array.
+
+### Enqueue
+
+```c#
+public void Enqueue(T value)
+{
+    Node<T> node = new Node<T>(value);
+
+    if (Front == null)
+    {
+        Front = node;
+        Rear = node;
+    }
+    else
+    {
+        Rear.Next = node;
+        Rear = node;
+    }
+}
+```
+
+### Dequeue
+
+```c#
+public T Dequeue()
+{
+    if (IsEmpty())
+        return default;
+
+    Node<T> temp = Front;
+    Front = Front.Next;
+    temp.Next = null;
+
+    return temp.Value;
+}
+```
+
+### Peek - Queue
+
+```c#
+public T Peek()
+{
+    return Front.Value;
+}
+```
+
+### IsEmpty - Queue
+
+```c#
+public bool IsEmpty()
+{
+    return Front == null;
 }
 ```
 
@@ -92,15 +197,19 @@ public T Peek()
 
 ## Link to Code
 
-[StackAndQueue Library](StackAndQueue/StackAndQueue.cs)
+* [StackAndQueue Library - Stack](StackAndQueue/Stack.cs)
+* [StackAndQueue Library - Queue](StackAndQueue/Queue.cs)
 
 ---
 
 ## References
 
 * [Code Fellows - Stacks and Queues](https://codefellows.github.io/common_curriculum/data_structures_and_algorithms/Code_401/class-10/resources/stacks_and_queues.html)
-* [tutorialpoints - Stack](https://www.tutorialspoint.com/data_structures_algorithms/stack_algorithm.htm)
+* [tutorialpoint - Stack](https://www.tutorialspoint.com/data_structures_algorithms/stack_algorithm.htm)
+* [tutorialpoint - Queue](https://www.tutorialspoint.com/data_structures_algorithms/dsa_queue.htm)
 * [Interview Cake - Stack](https://www.interviewcake.com/concept/python/stack?)
+* [Interview Cake - Queue](https://www.interviewcake.com/concept/python/queue?)
+* [LeetCode - Queue &  Stack](https://leetcode.com/explore/learn/card/queue-stack/)
 * [GeeksForGeeks - Abstract Data Types](https://www.geeksforgeeks.org/abstract-data-types/)
 
 ---

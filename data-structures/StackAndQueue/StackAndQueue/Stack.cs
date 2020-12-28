@@ -6,6 +6,7 @@ namespace StackAndQueue
     public class Stack<T>
     {
         private readonly List<T> _stack;
+
         public T Top { get; set; }
 
 
@@ -25,7 +26,7 @@ namespace StackAndQueue
         {
             int count = _stack.Count;
 
-            if (count == 0)
+            if (IsEmpty())
                 return default;
 
             Top = count == 1 ? default : _stack[count - 1];
@@ -40,7 +41,7 @@ namespace StackAndQueue
         {
             int count = _stack.Count;
 
-            if (count == 0)
+            if (IsEmpty())
                 return default;
 
             return _stack[count - 1];
