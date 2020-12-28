@@ -8,7 +8,7 @@ Author: Kyungrae Kim
 
 ### What is Stack?
 
-Stack is a linear data structure which adds or removes data in Last In First Out (LIFO) manner. It is also an abstract data structure (ADT) which is defined by a set of behaviors and not how the behavior is implemented.
+**Stack** is a linear data structure which adds or removes data in **Last In First Out (LIFO)** manner. It is also an abstract data structure (ADT) which is defined by a set of behaviors and not how the behavior is implemented.
 
 Since stack is an ADT, it can be implemented by using Array, Structure, Pointer, and Linked List.
 
@@ -26,11 +26,11 @@ push | 5 |- .    . >| 4 | pop
          +-----------+
 ```
 
-### Strength
+### Strength - Stack
 
 * Fast operations
 
-### Big O
+### Big O - Stack
 
 || Worst Case |
 |:-|:-:|
@@ -41,7 +41,9 @@ push | 5 |- .    . >| 4 | pop
 
 ---
 
-## Implementation
+## Implementation - Stack
+
+Below implementation uses a dynamic array.
 
 ### Push
 
@@ -74,7 +76,90 @@ public T Pop()
 }
 ```
 
-### Peek
+### Peek - Stack
+
+```c#
+public T Peek()
+{
+    int count = _stack.Count;
+
+    if (count == 0)
+        return default;
+
+    return _stack[count - 1];
+}
+```
+
+---
+
+## Queue
+
+### What is Queue?
+
+**Queue** is a linear data structure which adds or removes data in **First In First Out (FIFO)** manner. It is also an abstract data structure (ADT) which is defined by a set of behaviors and not how the behavior is implemented.
+
+Since queue is also an ADT, it can be implemented by using Array, Structure, Pointer, and Linked List.
+
+```text
+Enqueue                     Dequeue
+ +---+     +---+---+---+     +---+
+ |   |     |   |   |   |     |   |
+ | 5 |---> | 4 | 3 | 2 |---> | 1 |
+ |   |     |   |   |   |     |   |
+ +---+     +---+---+---+     +---+
+```
+
+### Strength - Queue
+
+* Fast operations
+
+### Big O - Queue
+
+|| Worst Case |
+|:-|:-:|
+| Space | O(n) |
+| Enqueue | O(1) |
+| Dequeue | O(1) |
+| Peek | O(1) |
+
+---
+
+## Implementation - Queue
+
+Below implementation uses a dynamic array.
+
+### Enqueue
+
+```c#
+public void Push(T value)
+{
+    Top = value;
+
+    _stack.Add(value);
+}
+```
+
+### Dequeue
+
+```c#
+
+public T Pop()
+{
+    int count = _stack.Count;
+
+    if (count == 0)
+        return default;
+
+    Top = count == 1 ? default : _stack[count - 1];
+
+    T pop = _stack[count - 1];
+    _stack.Remove(pop);
+
+    return pop;
+}
+```
+
+### Peek - Queue
 
 ```c#
 public T Peek()
@@ -99,8 +184,10 @@ public T Peek()
 ## References
 
 * [Code Fellows - Stacks and Queues](https://codefellows.github.io/common_curriculum/data_structures_and_algorithms/Code_401/class-10/resources/stacks_and_queues.html)
-* [tutorialpoints - Stack](https://www.tutorialspoint.com/data_structures_algorithms/stack_algorithm.htm)
+* [tutorialpoint - Stack](https://www.tutorialspoint.com/data_structures_algorithms/stack_algorithm.htm)
+* [tutorialpoint - Queue](https://www.tutorialspoint.com/data_structures_algorithms/dsa_queue.htm)
 * [Interview Cake - Stack](https://www.interviewcake.com/concept/python/stack?)
+* [Interview Cake - Queue](https://www.interviewcake.com/concept/python/queue?)
 * [GeeksForGeeks - Abstract Data Types](https://www.geeksforgeeks.org/abstract-data-types/)
 
 ---
