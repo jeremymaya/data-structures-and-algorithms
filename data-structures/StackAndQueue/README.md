@@ -59,12 +59,11 @@ public void Push(T value)
 ### Pop
 
 ```c#
-
 public T Pop()
 {
     int count = _stack.Count;
 
-    if (count == 0)
+    if (IsEmpty())
         return default;
 
     Top = count == 1 ? default : _stack[count - 1];
@@ -83,10 +82,22 @@ public T Peek()
 {
     int count = _stack.Count;
 
-    if (count == 0)
+    if (IsEmpty())
         return default;
 
     return _stack[count - 1];
+}
+```
+
+### IsEmpty - Stack
+
+```c#
+public bool IsEmpty()
+{
+    if (_stack.Count == 0)
+        return true;
+
+    return false;
 }
 ```
 
@@ -131,31 +142,36 @@ Below implementation uses a dynamic array.
 ### Enqueue
 
 ```c#
-public void Push(T value)
+public void Enqueue(T value)
 {
-    Top = value;
+    Node<T> node = new Node<T>(value);
 
-    _stack.Add(value);
+    if (Front == null)
+    {
+        Front = node;
+        Rear = node;
+    }
+    else
+    {
+        Rear.Next = node;
+        Rear = node;
+    }
 }
 ```
 
 ### Dequeue
 
 ```c#
-
-public T Pop()
+public T Dequeue()
 {
-    int count = _stack.Count;
-
-    if (count == 0)
+    if (IsEmpty())
         return default;
 
-    Top = count == 1 ? default : _stack[count - 1];
+    Node<T> temp = Front;
+    Front = Front.Next;
+    temp.Next = null;
 
-    T pop = _stack[count - 1];
-    _stack.Remove(pop);
-
-    return pop;
+    return temp.Value;
 }
 ```
 
@@ -164,12 +180,16 @@ public T Pop()
 ```c#
 public T Peek()
 {
-    int count = _stack.Count;
+    return Front.Value;
+}
+```
 
-    if (count == 0)
-        return default;
+### IsEmpty - Queue
 
-    return _stack[count - 1];
+```c#
+public bool IsEmpty()
+{
+    return Front == null;
 }
 ```
 
@@ -177,7 +197,8 @@ public T Peek()
 
 ## Link to Code
 
-[StackAndQueue Library](StackAndQueue/StackAndQueue.cs)
+* [StackAndQueue Library - Stack](StackAndQueue/Stack.cs)
+* [StackAndQueue Library - Queue](StackAndQueue/Queue.cs)
 
 ---
 
