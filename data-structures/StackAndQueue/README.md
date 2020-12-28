@@ -188,6 +188,7 @@ public T Peek()
 * [tutorialpoint - Queue](https://www.tutorialspoint.com/data_structures_algorithms/dsa_queue.htm)
 * [Interview Cake - Stack](https://www.interviewcake.com/concept/python/stack?)
 * [Interview Cake - Queue](https://www.interviewcake.com/concept/python/queue?)
+* [LeetCode - Queue &  Stack](https://leetcode.com/explore/learn/card/queue-stack/)
 * [GeeksForGeeks - Abstract Data Types](https://www.geeksforgeeks.org/abstract-data-types/)
 
 ---
