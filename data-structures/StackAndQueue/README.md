@@ -137,7 +137,7 @@ Enqueue                     Dequeue
 
 ## Implementation - Queue
 
-Below implementation uses a dynamic array.
+Below implementation uses a pointer.
 
 ### Enqueue
 
