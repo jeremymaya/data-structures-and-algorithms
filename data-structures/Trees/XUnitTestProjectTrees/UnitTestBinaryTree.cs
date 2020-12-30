@@ -82,5 +82,28 @@ namespace XUnitTestProjectTrees
 
             Assert.Equal(new List<int> { 2, 3, 1 }, binaryTree.PostOrder(binaryTree.Root));
         }
+
+        [Fact]
+        public void CanSuccessfullyReturnACollectionFromABreadthFirstTraversal()
+        {
+            BinaryTree<int> binaryTree = new BinaryTree<int>
+            {
+                Root = new Node<int>(2)
+                {
+                    Left = new Node<int>(7),
+                    Right = new Node<int>(5)
+                }
+            };
+
+            binaryTree.Root.Left.Left = new Node<int>(2);
+            binaryTree.Root.Left.Right = new Node<int>(6);
+            binaryTree.Root.Left.Right.Left = new Node<int>(5);
+            binaryTree.Root.Left.Right.Right = new Node<int>(11);
+
+            binaryTree.Root.Right.Right = new Node<int>(9);
+            binaryTree.Root.Right.Right.Left = new Node<int>(4);
+
+            Assert.Equal(new List<int> { 2, 7, 5, 2, 6, 9, 5, 11, 4 }, binaryTree.BreadthFirst(binaryTree.Root));
+        }
     }
 }

@@ -126,5 +126,30 @@ namespace Trees
 
             return values;
         }
+
+        public List<T> BreadthFirst(Node<T> root)
+        {
+            if (root == null)
+                return new List<T>();
+
+            List<T> values = new List<T>();
+            Queue<Node<T>> queue = new Queue<Node<T>>();
+
+            queue.Enqueue(root);
+
+            while (queue.Count != 0)
+            {
+                Node<T> node = queue.Dequeue();
+
+                if (node.Left != null)
+                    queue.Enqueue(node.Left);
+                if (node.Right != null)
+                    queue.Enqueue(node.Right);
+
+                values.Add(node.Value);
+            }
+
+            return values;
+        }
     }
 }

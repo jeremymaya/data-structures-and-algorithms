@@ -76,5 +76,40 @@ namespace Trees
             PostOrder(root.Right, values);
             values.Add(root.Value);
         }
+
+        public List<T> BreadthFirst(Node<T> root)
+        {
+            if (root == null)
+                return new List<T>();
+
+            List<List<T>> values = new List<List<T>>();
+            BreadthFirst(root, values, 0);
+            return MergeLists(values);
+        }
+
+        private void BreadthFirst(Node<T> node, List<List<T>> values, int level)
+        {
+            if (node == null)
+                return;
+
+            if (values.Count == level)
+                values.Add(new List<T>());
+
+            values[level].Add(node.Value);
+
+            BreadthFirst(node.Left, values, level + 1);
+            BreadthFirst(node.Right, values, level + 1);
+        }
+
+        private List<T> MergeLists(List<List<T>> values)
+        {
+            List<T> merged = new List<T>();
+
+            foreach (List<T> list in values)
+                foreach (T item in list)
+                    merged.Add(item);
+
+            return merged;
+        }
     }
 }

@@ -125,5 +125,28 @@ namespace XUnitTestProjectTrees
             Assert.True(binarySearchTree.Contains('c'));
             Assert.False(binarySearchTree.Contains('d'));
         }
+
+        [Fact]
+        public void CanSuccessfullyReturnACollectionFromABreadthFirstTraversal()
+        {
+            BinarySearchTree<int> binarySearchTree = new BinarySearchTree<int>
+            {
+                Root = new Node<int>(2)
+                {
+                    Left = new Node<int>(7),
+                    Right = new Node<int>(5)
+                }
+            };
+
+            binarySearchTree.Root.Left.Left = new Node<int>(2);
+            binarySearchTree.Root.Left.Right = new Node<int>(6);
+            binarySearchTree.Root.Left.Right.Left = new Node<int>(5);
+            binarySearchTree.Root.Left.Right.Right = new Node<int>(11);
+
+            binarySearchTree.Root.Right.Right = new Node<int>(9);
+            binarySearchTree.Root.Right.Right.Left = new Node<int>(4);
+
+            Assert.Equal(new List<int> { 2, 7, 5, 2, 6, 9, 5, 11, 4 }, binarySearchTree.BreadthFirst(binarySearchTree.Root));
+        }
     }
 }
