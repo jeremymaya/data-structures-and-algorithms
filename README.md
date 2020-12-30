@@ -10,24 +10,24 @@ Author: Kyungrae Kim
 
 * [Linked List](data-structures/SinglyLinkedList)
 * [Stacks And Queues](data-structures/StackAndQueue)
-* [Hash Table](data-structures/HashtableImplementation)
-* [Tree](data-structures/Trees)
-* [Graph](data-structures/GraphImplementation)
+* [Trees](data-structures/Trees)
+* ~~[Hash Table](data-structures/HashtableImplementation)~~
+* ~~[Graph](data-structures/GraphImplementation)~~
 
 ### Searching
 
-* [Binary Search](challenges/SearchBinary)
-* Breadth-First Search - INCOMPLETE
-* [Depth First](searching/DepthFirst)
+* [Binary Search](searching/BinarySearch)
+* ~~[Depth First](searching/DepthFirst)~~
+* ~~Breadth-First Search - INCOMPLETE~~
 
 ### Sorting
 
-* Bubble Sort - INCOMPLETE
-* [Insertion Sort](sort/InsertionSort)
-* Selection Sort - INCOMPLETE
-* [Merge Sort](sort/MergeSort)
-* Shell Sort - INCOMPLETE
-* [Quick Sort](sort/QuickSort)
+* ~~Bubble Sort - INCOMPLETE~~
+* ~~[Insertion Sort](sort/InsertionSort)~~
+* ~~Selection Sort - INCOMPLETE~~
+* ~~[Merge Sort](sort/MergeSort)~~
+* ~~Shell Sort - INCOMPLETE~~
+* ~~[Quick Sort](sort/QuickSort)~~
 
 ### Challenges
 
