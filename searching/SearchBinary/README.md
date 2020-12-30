@@ -1,11 +1,11 @@
-# Code Challenge 03 Array Search Binary
+# Binary Search
 
-## Array Search Binary
-*Author: Kyungrae Kim*
+Author: Kyungrae Kim
 
 ---
 
-### Problem Domain
+## What is Binary Search?
+
 Write a function called 'BinarySearch' which takes in 2 parameters: a sorted array and the search key. Return the index of the array’s element that is equal to the search key, or -1 if the element does not exist.
 
 ---
