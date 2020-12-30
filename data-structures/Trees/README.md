@@ -109,6 +109,194 @@ Disadvantages:
 
 ## Implementation
 
+### PreOrder - Recursive
+
+```c#
+public List<T> PreOrder(Node<T> root)
+{
+    if (root == null)
+        return new List<T>();
+
+    List<T> values = new List<T>();
+    PreOrder(root, values);
+    return values;
+}
+
+private void PreOrder(Node<T> root, List<T> values)
+{
+    if (root == null)
+        return;
+    
+    values.Add(root.Value);
+    PreOrder(root.Left, values);
+    PreOrder(root.Right, values);
+}
+```
+
+### PreOrder - Iterative
+
+```c#
+public List<T> PreOrder(Node<T> root)
+{
+    if (root == null)
+        return new List<T>();
+
+    Stack<Node<T>> stack = new Stack<Node<T>>();
+    List<T> values = new List<T>();
+
+    stack.Push(root);
+
+    while (stack.Count != 0)
+    {
+        Node<T> current = stack.Pop();
+        values.Add(current.Value);
+
+        if (current.Right != null)
+            stack.Push(current.Right);
+
+        if (current.Left != null)
+            stack.Push(current.Left);
+    }
+
+    return values;
+}
+```
+
+### InOrder - Recursive
+
+```c#
+public List<T> InOrder(Node<T> root)
+{
+    if (root == null)
+        return new List<T>();
+
+    List<T> values = new List<T>();
+    InOrder(root, values);
+    return values;            
+}
+
+private void InOrder(Node<T> root, List<T> values)
+{
+    if (root == null)
+        return;
+    
+    InOrder(root.Left, values);
+    values.Add(root.Value);
+    InOrder(root.Right, values);
+}
+```
+
+### InOrder - Iterative
+
+```c#
+public List<T> InOrder(Node<T> root)
+{
+    if (root == null)
+        return new List<T>();
+
+    Stack<Node<T>> stack = new Stack<Node<T>>();
+    List<T> values = new List<T>();
+
+    Node<T> current = root;
+
+    while (current != null || stack.Count != 0)
+    {
+        while (current != null)
+        {
+            stack.Push(current);
+            current = current.Left;
+        }
+
+        current = stack.Pop();
+        values.Add(current.Value);
+        current = current.Right;
+    }
+
+    return values;
+}
+```
+
+### PostOrder - Recursive
+
+```c#
+public List<T> PostOrder(Node<T> root)
+{
+    if (root == null)
+        return new List<T>();
+
+    List<T> values = new List<T>();
+    PostOrder(root, values);
+    return values;            
+}
+
+private void PostOrder(Node<T> root, List<T> values)
+{
+    if (root == null)
+        return;
+    
+    PostOrder(root.Left, values);
+    PostOrder(root.Right, values);
+    values.Add(root.Value);
+}
+```
+
+### PostOrder - Iterative
+
+```c#
+public List<T> PostOrder(Node<T> root)
+{
+    if (root == null)
+        return new List<T>();
+
+    Stack<Node<T>> stack = new Stack<Node<T>>();
+    List<T> values = new List<T>();
+
+    stack.Push(root);
+
+    while (stack.Count != 0)
+    {
+        Node<T> current = stack.Pop();
+        values.Insert(0, current.Value);
+
+        if (current.Left != null)
+            stack.Push(current.Left);
+
+        if (current.Right != null)
+            stack.Push(current.Right);
+    }
+
+    return values;
+}
+```
+
+### Add - BST, Iterative
+
+```c#
+public void Add(T value)
+{
+    if (Contains(value))
+        throw new Exception("The value is already present in the tree.");
+    else
+        Values.Add(value);
+
+    Node<T> parent = Root;
+    Node<T> child= Root;
+
+    while (parent != null)
+    {
+        child = parent;
+        parent = Comparer<T>.Default.Compare(value, parent.Value) < 0 ? parent.Left : parent.Right;
+    }
+
+    if (Root == null)
+        Root = new Node<T>(value);
+    else if (Comparer<T>.Default.Compare(value, child.Value) < 0)
+        child.Left= new Node<T>(value);
+    else
+        child.Right = new Node<T>(value);
+}
+```
+
 ---
 
 ## Link to Code
