@@ -8,37 +8,37 @@ Author: Kyungrae Kim
 
 ### Data Structures
 
-* [Linked List](data-structures/SinglyLinkedList/README.md)
-* [Stacks And Queues](data-structures/StackAndQueue/README.md)
-* [Hash Table](data-structures/HashtableImplementation/README.md)
-* [Tree](data-structures/Trees/README.md)
-* [Graph](data-structures/GraphImplementation/README.md)
+* [Linked List](data-structures/SinglyLinkedList)
+* [Stacks And Queues](data-structures/StackAndQueue)
+* [Hash Table](data-structures/HashtableImplementation)
+* [Tree](data-structures/Trees)
+* [Graph](data-structures/GraphImplementation)
 
 ### Searching
 
-* [Binary Search](challenges/SearchBinary/README.md)
+* [Binary Search](challenges/SearchBinary)
 * Breadth-First Search - INCOMPLETE
-* [Depth First](searching/DepthFirst/README.md)
+* [Depth First](searching/DepthFirst)
 
 ### Sorting
 
 * Bubble Sort - INCOMPLETE
-* [Insertion Sort](sort/InsertionSort/README.md)
+* [Insertion Sort](sort/InsertionSort)
 * Selection Sort - INCOMPLETE
-* [Merge Sort](sort/MergeSort/README.md)
+* [Merge Sort](sort/MergeSort)
 * Shell Sort - INCOMPLETE
-* [Quick Sort](sort/QuickSort/README.md)
+* [Quick Sort](sort/QuickSort)
 
 ### Challenges
 
-* [Array Shift](challenges/ArrayShift/README.md)
-* [Linked List Merge](challenges/LLMerge/README.md)
-* [FIFO Animal Shelter](challenges/FIFOAnimalShelter/README.md)
-* [Multi Bracket Validation](challenges/MultiBracketValidation/README.md)
-* [FizzBuzz Tree](challenges/FizzBuzzTree/README.md)
-* [Repeated Word](challenges/RepeatedWord/README.md)
-* [Tree Intersection](challenges/TreeIntersection/README.md)
-* [Get Edges](challenges/GetEdges/README.md)
+* [Array Shift](challenges/ArrayShift)
+* [Linked List Merge](challenges/LLMerge)
+* [FIFO Animal Shelter](challenges/FIFOAnimalShelter)
+* [Multi Bracket Validation](challenges/MultiBracketValidation)
+* [FizzBuzz Tree](challenges/FizzBuzzTree)
+* [Repeated Word](challenges/RepeatedWord)
+* [Tree Intersection](challenges/TreeIntersection)
+* [Get Edges](challenges/GetEdges)
 
 ---
 
