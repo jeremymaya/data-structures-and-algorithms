@@ -113,7 +113,8 @@ Disadvantages:
 
 ## Link to Code
 
-* [Trees Library - Binary Tree](Trees/BinarySearchTree.cs)
+* [Trees Library - Binary Tree](Trees/BinaryTree.cs)
+* [Trees Library - Binary Search Tree](Trees/BinarySearchTree.cs)
 
 ---
 
@@ -126,6 +127,11 @@ Disadvantages:
 * [LeetCode - Binary Tree](https://leetcode.com/explore/learn/card/data-structure-tree/)
 * [LeetCode - Binary Search Tree](https://leetcode.com/explore/learn/card/introduction-to-data-structure-binary-search-tree/)
 * [LeetCode - N-ary Tree](https://leetcode.com/explore/learn/card/introduction-to-data-structure-binary-search-tree/)
+* [LeetCode - Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)
+* [LeetCode - Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
+* [LeetCode - Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)
+* [LeetCode - Insert into a Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/)
+* [DONT CODE TIRED - Testing for Thrown Exceptions in xUnit.net](http://dontcodetired.com/blog/post/Testing-for-Thrown-Exceptions-in-xUnitnet)
 
 ---
 
