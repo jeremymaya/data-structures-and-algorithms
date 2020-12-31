@@ -11,12 +11,12 @@ Author: Kyungrae Kim
 * [Linked List](data-structures/SinglyLinkedList)
 * [Stacks And Queues](data-structures/StackAndQueue)
 * [Trees](data-structures/Trees)
-* ~~[Hash Table](data-structures/HashtableImplementation)~~
 * ~~[Graph](data-structures/GraphImplementation)~~
+* ~~[Hash Table](data-structures/HashtableImplementation)~~
 
 ### Searching
 
-* [Binary Search](searching/BinarySearch)
+* [Binary Search](searching/BinarySearchAlgorithm)
 * ~~[Depth First](searching/DepthFirst)~~
 * ~~Breadth-First Search - INCOMPLETE~~
 
