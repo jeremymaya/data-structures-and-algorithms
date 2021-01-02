@@ -22,12 +22,12 @@ Author: Kyungrae Kim
 
 ### Sorting
 
+* [Quick Sort](sorting/QuickSortAlgorithm)
 * ~~Bubble Sort - INCOMPLETE~~
-* ~~[Insertion Sort](sort/InsertionSort)~~
+* ~~[Insertion Sort](sorting/InsertionSort)~~
 * ~~Selection Sort - INCOMPLETE~~
-* ~~[Merge Sort](sort/MergeSort)~~
+* ~~[Merge Sort](sorting/MergeSort)~~
 * ~~Shell Sort - INCOMPLETE~~
-* ~~[Quick Sort](sort/QuickSort)~~
 
 ### Challenges
 

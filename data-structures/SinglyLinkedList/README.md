@@ -18,12 +18,12 @@ Linked List is a linear data structure made of a sequence of `Nodes` that are li
     HEAD
 ```
 
-### Strength
+### Advantages
 
 * Allows for fast operations on the ends
 * Dynamic data structure - flexible in size
 
-### Weakness
+### Disadvantages
 
 * Costly lookup
 * Not cache-friendly
