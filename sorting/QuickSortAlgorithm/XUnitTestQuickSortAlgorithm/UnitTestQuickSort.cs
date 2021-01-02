@@ -1,10 +1,10 @@
 using System;
 using Xunit;
-using QuickSort;
+using QuickSortAlgorithm;
 
-namespace CodeChallenge28Test
+namespace XUnitTestQuickSortAlgorithm
 {
-    public class UnitTest1
+    public class UnitTestQuickSort
     {
         [Fact]
         public void CanSortARandomlySortedArray()
