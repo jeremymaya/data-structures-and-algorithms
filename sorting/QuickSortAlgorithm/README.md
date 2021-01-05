@@ -87,10 +87,8 @@ static void Swap(int[] arr, int i, int low)
 * [Code Fellows - Quick Sort](https://codefellows.github.io/common_curriculum/data_structures_and_algorithms/Code_401/class-28/)
 * [Wikipedia - Quicksort](https://en.wikipedia.org/wiki/Quicksort)
 * [GeeksForGeeks - Quick Sort](https://www.geeksforgeeks.org/quick-sort/)
-* [tutorialpoints - Quicksort Algorithm](https://www.interviewcake.com/concept/python/quicksort?)
-* [Interview Cake - Binary Search Algorithm](https://www.interviewcake.com/concept/python/binary-search?)
-* [LeetCode - Binary Search (Learn)](https://leetcode.com/explore/learn/card/binary-search/)
-* [LeetCode - Binary Search](https://leetcode.com/problems/binary-search/)
+* [tutorialpoints - Quicksort Algorithm](https://www.tutorialspoint.com/data_structures_algorithms/quick_sort_algorithm.htm)
+* [Interview Cake - Quick Sort](https://www.interviewcake.com/concept/python/quicksort?)
 
 ---
 
